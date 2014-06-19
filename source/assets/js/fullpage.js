@@ -1,12 +1,12 @@
 /*======================================================================*/
 /* Brand Text-Color vs Slide Backgound                               ===*/
   function brand_darkBackgound(){
-        $('#brand .dm_title h2').switchClass('background-light','background-dark', 100, "easeInOutQuad");
-        $('#brand .dm_title ul').switchClass('background-light','background-dark', 100, "easeInOutQuad");
+        $('#brand .title h2').switchClass('background-light','background-dark', 100, "easeInOutQuad");
+        $('#brand .title ul').switchClass('background-light','background-dark', 100, "easeInOutQuad");
   };
   function brand_lightBackgound(){
-        $('#brand .dm_title h2').switchClass('background-dark', 'background-light', 100, "easeInOutQuad");
-        $('#brand .dm_title ul').switchClass('background-dark', 'background-light', 100, "easeInOutQuad");
+        $('#brand .title h2').switchClass('background-dark', 'background-light', 100, "easeInOutQuad");
+        $('#brand .title ul').switchClass('background-dark', 'background-light', 100, "easeInOutQuad");
   }
 /*======================================================================*/
 
@@ -19,9 +19,9 @@ $(document).ready(function() {
     $('#full-page').fullpage({
         menu: '#menu',
         resize : false,
-        autoScrolling: false,
+        // autoScrolling: false,
         animateAnchor: true,
-        loopHorizontal: false,
+        // loopHorizontal: false,
         verticalCentered: true,
         slidesNavigation: true,
         slidesNavPosition: 'top pull-left',
@@ -39,7 +39,7 @@ $(document).ready(function() {
           }
         },
     });
-    $.fn.fullpage.moveTo(0,4);
+    // $.fn.fullpage.moveTo(0,4);
   /*======================================================================*/
 
   /*======================================================================*/
@@ -50,14 +50,10 @@ $(document).ready(function() {
 
   /*======================================================================*/
   /* fullPage-slidesNav -- Styling Classes                             ===*/
-    $(".fullPage-slidesNav").addClass('hidden-xs')
-    $(".fullPage-slidesNav").css("margin-left", "0px");
-    $(".fullPage-slidesNav > ul").addClass('nav nav-pills')
-    $(".fullPage-slidesNav > ul li:nth-child(1) a").empty().prepend("Contacts");
-    $(".fullPage-slidesNav > ul li:nth-child(2) a").empty().prepend("Psych Tests");
-    $(".fullPage-slidesNav > ul li:nth-child(3) a").empty().prepend("Problems");
-    $(".fullPage-slidesNav > ul li:nth-child(4) a").empty().prepend("Services");
-    $(".fullPage-slidesNav > ul li:nth-child(5) a").empty().prepend("About");
+    // $(".fullPage-slidesNav").addClass('hidden-xs')
+    // $(".fullPage-slidesNav").css("margin-left", "0px");
+    // $(".fullPage-slidesNav > ul").addClass('nav nav-pills')
+    // $(".fullPage-slidesNav > ul li:nth-child(1) a").empty().prepend("");
   /*======================================================================*/
 
 });
