@@ -11,9 +11,9 @@ html, body {
 #superContainer {
     height: 100%;
     position: relative;
-	
+
 	/* Touch detection for Windows 8 */
-	-ms-touch-action: none; 
+	-ms-touch-action: none;
 }
 .section {
     position: relative;
@@ -178,7 +178,7 @@ a{
 	text-decoration:none;
 }
 table {
-    border-spacing: 0;    
+    border-spacing: 0;
 }
 fieldset,img {
     border: 0;
@@ -227,7 +227,7 @@ body{
 	position: relative;
 }
 h1{
-	font-size: 6em;	
+	font-size: 6em;
 }
 
 .intro p{
@@ -244,8 +244,8 @@ h1{
 	color: #000;
 	background:#fff;
 	background: rgba(255,255,255, 0.5);
-	-webkit-border-radius: 10px; 
-            border-radius: 10px; 
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
 }
 #menu li.active{
 	background:#666;
@@ -303,7 +303,7 @@ h1{
 	border-color: #2f96b4 #2f96b4 #1f6377;
 	border-color: rgba(0,0,0,.1) rgba(0,0,0,.1) rgba(0,0,0,.25);
 	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-	
+
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
 	border-radius: 6px;
@@ -344,7 +344,7 @@ h1{
 }
 #infoMenu li a{
 	display: block;
-	margin: 0 22px 0 0;	
+	margin: 0 22px 0 0;
 	color: #333;
 }
 #infoMenu li a:hover{
@@ -407,3 +407,35 @@ h1{
 	right:10px;
 	z-index: 999;
  }
+
+
+	/* Fixed header and footer.
+* --------------------------------------- */
+#header, #footer{
+position:fixed;
+height: 72px;
+display:block;
+width: 100%;
+/* background: red; */
+z-index:9;
+color: #f2f2f2;
+/* padding: 20px 0 0 0; */
+}
+
+#header{
+top:0px;
+}
+#footer{
+bottom:0px;
+}
+
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu {
+bottom: 80px;
+}
+#infoMenu li a {
+color: #fff;
+z-index: 999;
+}

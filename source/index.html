@@ -1,31 +1,33 @@
-{% extends "_layout.html" %}
+{% extends "_base/_layout.html" %}
 {% block head %}
-  <title></title>
+  <title>{{LANG}} | Fab Lab Egypt</title>
   {% include "_structure/_pace.html" %}
   {% include "_structure/_styles.html" %}
+  {% include "_structure/_favicons.html" %}
 {% endblock head %}
 
+
 {% block header %}
-  {% include "_brand.html" %}
+  <div class="continer">
+    {% include "_partials/_brand-%s.html"|format(LANG) %}
+  </div>
 {% endblock %}
 
 {% block fullpage %}
   <div id="full-page">
-
     <div class="section active">
       <!-- Section -->
-      {% include "_placeholder.html" %}
+      {% include "_partials/_placeholder.html" %}
     </div>
     <div id="memberships" class="section">
-      {% include "_sections/_pricing_table-en.html" %}
+      {% include "_sections/_pricing_table-%s.html"|format(LANG) %}
     </div>
     <div class="section">
-      <!--  Section with H-Slider-->
-      <div class="slide" data-anchor="contacts" dir="rtl">
-      {% include "_placeholder.html" %}
-      </div>
+      <div class="slide"> Slide 1 </div>
+      <div class="slide"> Slide 2 </div>
+      <div class="slide"> Slide 3 </div>
+      <div class="slide"> Slide 4 </div>
     </div>
-
   </div>
   {% include "_structure/_javascript.html" %}
 {% endblock fullpage %}

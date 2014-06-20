@@ -4,11 +4,11 @@
 
 .background-light { color: black !important;  }
 .background-dark  { color: whitesmoke !important; }
+.font-lightest { font-weight: 100; }
 
-#brand { top: 17px; display: block; position: absolute; z-index: 4; right: 0px; opacity: 1; }
-#brand #title h2 { font-size: 23px; line-height: 2em; padding-right: 10px; }
-#brand #title ul { font-size: 11px; }
-#brand #logo { background: url('../images/logo.png') no-repeat; width: 64px; height: 64px; z-index: 9; background-size: auto 64px; }
+
+.navbar { padding: 10px; border-radius: 0; background-color: #fff;}
+.navbar-brand { color: #111!important; background: url('../images/logo.png') no-repeat; z-index: 5; background-size: auto 45px; padding-left:50px; padding-top: 3px;}
 
 .section > * { direction: rtl; }
 
