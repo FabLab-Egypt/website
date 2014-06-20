@@ -17,14 +17,10 @@ $(document).ready(function() {
   /*======================================================================*/
   /* fullPage -- Initaliz and Configure                                ===*/
     $('#full-page').fullpage({
-        menu: '#menu',
         resize : false,
-        // autoScrolling: false,
         animateAnchor: true,
-        // loopHorizontal: false,
         verticalCentered: true,
         slidesNavigation: true,
-        slidesNavPosition: 'top pull-left',
 
         // Callbacks
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){

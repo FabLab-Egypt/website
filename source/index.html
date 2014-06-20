@@ -15,9 +15,8 @@
 
 {% block fullpage %}
   <div id="full-page">
-    <div class="section active">
-      <!-- Section -->
-      {% include "_partials/_placeholder.html" %}
+    <div id="about" class="section active">
+      {% include "_sections/_about-%s.html"|format(LANG) %}
     </div>
     <div id="memberships" class="section">
       {% include "_sections/_pricing_table-%s.html"|format(LANG) %}

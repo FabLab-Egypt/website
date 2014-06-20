@@ -13,7 +13,7 @@
 .section > * { direction: rtl; }
 
 /*==========  About  ==========*/
-#about.section {background: #f9493c; }
+#about.section {background: #ffffff; }
 
 /*==========  Services  ==========*/
 #services.section { background: #fdd55e; }
