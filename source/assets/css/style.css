@@ -13,22 +13,22 @@
 .section > * { direction: rtl; }
 
 /*==========  About  ==========*/
-#about.section {background: #CFE9F6; }
+#about.section {background: #f9493c; }
 
 /*==========  Services  ==========*/
-#about.section { background: #FFF2C6; }
+#services.section { background: #fdd55e; }
 
 /*==========  Machines  ==========*/
-#about.section { background: #545E63; }
+#machines.section { background: #545E63; }
 
 /*==========  Projects ==========*/
-#about.section { background: #E9A25E; }
+#projects.section { background: #43f0f6; }
 
 /*==========  Membership ==========*/
-#about.section { background: #7095B7; }
+#memberships.section { background: #9c1cbc; }
 
 /*==========  contacts ==========*/
-#about.section { background: #7095B7; }
+#contacts.section { background: #2163ff; }
 
 
 /*==================================================

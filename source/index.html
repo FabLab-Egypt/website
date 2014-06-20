@@ -11,9 +11,13 @@
 
 {% block fullpage %}
   <div id="full-page">
+
     <div class="section active">
       <!-- Section -->
       {% include "_placeholder.html" %}
+    </div>
+    <div id="memberships" class="section">
+      {% include "_sections/_pricing_table-en.html" %}
     </div>
     <div class="section">
       <!--  Section with H-Slider-->
@@ -21,9 +25,7 @@
       {% include "_placeholder.html" %}
       </div>
     </div>
-    <div id="membership" class="section">
-        {% include "_sections/_pricing-tables.html" %}
-    </div>
+
   </div>
   {% include "_structure/_javascript.html" %}
-{% endblock body %}
+{% endblock fullpage %}
