@@ -23,3 +23,4 @@ HOST = '0.0.0.0'
 PORT = 8080
 
 ## Your own settings here
+LANG='en' # Language Setting values [ar|en]
