@@ -1,7 +1,8 @@
-.continer.pricing-table{ padding-left: 20px; padding-right: 20px; margin-top:2%;}
-  .continer.pricing-table .pricing-panel.pt-featured { margin-top: -40px; }
+.continer.pricing-table{ padding-left: 20px; padding-right: 20px; margin-top:7%;}
+  .continer.pricing-table .pricing-panel.pt-featured { margin-top: -20px; }
     .continer.pricing-table .pricing-panel.pt-featured .panel-heading,
-    .continer.pricing-table .pricing-panel.pt-featured .panel-footer { background-color: #e2ff00; }
+    .continer.pricing-table .pricing-panel.pt-featured .panel-footer
+    { background-color: #e2ff00; padding:0; }
     .continer.pricing-table .pricing-panel h3 { font-size: 500%; }
     .continer.pricing-table .pricing-panel h3 small { font-size: 30%; }
     .continer.pricing-table .pricing-panel small { font-size: 100%; font-weight: lighter; font-stretch:normal; font-weight:400;}
