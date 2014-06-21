@@ -1,66 +1,33 @@
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-/* MCCMS Website main stylesheet                                             */
+/* Fablab Website main stylesheet                                            */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
 .background-light { color: black !important;  }
-.background-dark { color: whitesmoke !important; }
-
-#brand { top: 17px; display: block; position: absolute; z-index: 4; right: 0px; opacity: 1; }
-#brand .dm_title h2 { font-size: 23px; line-height: 2em; padding-right: 10px;}
-#brand .dm_title ul { font-size: 11px; }
-#brand .dm_logo { background: url('../images/dm_logo.png') no-repeat; width: 64px; height: 64px; z-index: 9; background-size: auto 64px; }
-
-.slides > * { direction: rtl; }
-
-/*==========  About Slide (4)  ==========*/
-.slides #about {background: #CFE9F6; }
-
-/*==========  Services Slide (3)  ==========*/
-.slides #services { background: #FFF2C6; }
-  .slides #services .container-fluid { margin-top: 100px; }
-    .slides #services .service-row { margin-bottom: 10px; margin-left: 70px;}
-      .slides #services .service-col { margin-left: 10px; height: 100%; font-size: 1em; height: 250px; background-repeat: no-repeat;}
-          /*.slides #services .service-col .service-wrapper {margin-top: 180px;}*/
-          .slides #services .service-col h2 { font-size: 1.2em; padding-top: 15px; line-height: 1.35em;}
-          .slides #services .service-col h2.one-line { line-height: 2.7em; }
-          .slides #services .service-col p  { display: block; padding: 5px; padding-top: 20px; padding-bottom: 15px; }
-      /* ROW A*/
-        .slides #services #sa1 {background-color: #8BE3E5; /*lighter blue-ish*/ background-image: url('../images/icon_33914-family.png');  background-size: 120% auto; background-position: -55% 265%;}
-        .slides #services #sa1.hover { z-index: 2; border:3px solid #7CCBCC; /* lighter blue-ish HSV v-10*/}
-        .slides #services #sa2 {background-color: #F5FA90; /*yellow-is*/   background-image: url('../images/icon_35238-psychic.png');  background-size: 120% auto; background-position: -45% 200%;}
-        .slides #services #sa2.hover { z-index: 2; border:3px solid #DCE082; /* yellow-is HSV v-10*/}
-        .slides #services #sa3 {background-color: #FF73A2; /*lighter Pink-ish*/ background-image: url('../images/icon_30012-wedding_cake.png');  background-size: 120% auto; background-position: -55% 155%;}
-        .slides #services #sa3.hover { z-index: 2; border:3px solid #A876A7; /* Violet-ish HSV v-10*/}
-        .slides #services #sa4 {background-color: #BE9F7C; /*Brown-ish*/   background-image: url('../images/icon_29870-divorce.png');  background-size: 120% auto; background-position: -55% 155%;}
-        .slides #services #sa4.hover { z-index: 2; border:3px solid #33A1CC; /* Blue-ish HSV v-10*/}
-        .slides #services #sa5 {background-color: #DC638B; /*Pink-ish*/    background-image: url('../images/icon_28612-making_love.png');  background-size: 120% auto; background-position: -56% 220%;}
-        .slides #services #sa5.hover { z-index: 2; border:3px solid #C2577B; /* Pink-ish HSV v-10*/}
-      /* ROW B*/
-        .slides #services #sb1 {background-color: #A0C981; /*Green-ish*/   background-image: url('../images/icon_43010_denial.png');  background-size: 120% auto; background-position: -55% 265%;}
-        .slides #services #sb1.hover { z-index: 2; border:3px solid #C2577B; /* Pink-ish HSV v-10*/}
-        .slides #services #sb2 {background-color: #3AB4E5; /*Blue-ish*/    background-image: url('../images/icon_29361-skills.png'); background-size: 90% auto; background-position: 280% 120%;}
-        .slides #services #sb2.hover { z-index: 2; border:3px solid #33A1CC; /* Blue-ish HSV v-10*/}
-        .slides #services #sb3 {background-color: #C389C2; /*Violet-ish*/  background-image: url('../images/icon_17323-speech.png'); background-size: 70% auto; background-position: 120% 100%;}
-        .slides #services #sb3.hover { z-index: 2; border:3px solid #A876A7; /* Violet-ish HSV v-10*/}
-        .slides #services #sb4 {background-color: transparent; margin-left: 20px;}
-          .slides #services #sb4 h2 { margin-bottom: 5px; }
-          .slides #services #sb4 ul { list-style: disc; padding-right: 20px; }
-
-/*==========  Problems Slide (2)  ==========*/
-.slides #problems { background: #545E63; }
-
-/*==========  Tests Slide (1)  ==========*/
-.slides #psych-tests { background: #E9A25E; }
-
-/*==========  Contacts Slide (0)  ==========*/
-.slides #contacts { background: #7095B7; }
+.background-dark  { color: whitesmoke !important; }
+.font-lightest { font-weight: 100; }
 
 
-@media (max-width: 1280px) {
-  .slides #services .service-col { padding: 0; margin-left: 10px; height: 100%; font-size: 0.8em; height: 150px}
-    .slides #services .service-col  h2 { padding: 0; padding-top:5px;}
-    .slides #services .service-col  p { padding: 5;}
-}
+.navbar { padding-top: 10px;}
+.navbar-brand { /* color: #111!important; */ background: url('../images/logo.png') no-repeat; z-index: 5; background-size: auto 45px; padding-left:50px; padding-top: 3px;}
+
+
+/*==========  About  ==========*/
+#about.section {background: #ffffff; }
+
+/*==========  Services  ==========*/
+#services.section { background: #fdd55e; }
+
+/*==========  Machines  ==========*/
+#machines.section { background: #545E63; }
+
+/*==========  Projects ==========*/
+#projects.section { background: #43f0f6; }
+
+/*==========  Membership ==========*/
+#memberships.section { background: #9c1cbc; }
+
+/*==========  contacts ==========*/
+#contacts.section { background: #2163ff; }
 
 
 /*==================================================
@@ -121,20 +88,3 @@
 @media only screen and (max-width : 320px) {
 
 }
-
-/*==================================================
-=            panel-accordion bootsnipp             =
-==================================================*/
-/*
-      .panel-collapse>.list-group .list-group-item:first-child {border-top-right-radius: 0;border-top-left-radius: 0;}
-      .panel-collapse>.list-group .list-group-item {border-width: 1px 0;}
-      .panel-collapse>.list-group {margin-bottom: 0;}
-      .panel-collapse .list-group-item {border-radius:0;}
-
-      .panel-collapse .list-group .list-group {margin: 0;margin-top: 10px;}
-      .panel-collapse .list-group-item li.list-group-item {margin: 0 -15px;border-top: 1px solid #ddd;border-bottom: 0;padding-left: 30px;}
-      .panel-collapse .list-group-item li.list-group-item:last-child {padding-bottom: 0;}
-
-      .panel-collapse div.list-group div.list-group{margin: 0;}
-      .panel-collapse div.list-group .list-group a.list-group-item {border-top: 1px solid #ddd;border-bottom: 0;padding-left: 30px;}
-*/

@@ -17,27 +17,23 @@ $(document).ready(function() {
   /*======================================================================*/
   /* fullPage -- Initaliz and Configure                                ===*/
     $('#full-page').fullpage({
-        menu: '#menu',
         resize : false,
-        // autoScrolling: false,
         animateAnchor: true,
-        // loopHorizontal: false,
         verticalCentered: true,
-        slidesNavigation: true,
-        slidesNavPosition: 'top pull-left',
+        // slidesNavigation: true,
 
         // Callbacks
-        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
-          console.log('slideIndex: '+slideIndex);
-          switch(slideIndex){
-            case 2:
-              brand_darkBackgound();
-              break;
-            default:
-              brand_lightBackgound();
-              break;
-          }
-        },
+        // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
+        //   console.log('slideIndex: '+slideIndex);
+        //   switch(slideIndex){
+        //     case 2:
+        //       brand_darkBackgound();
+        //       break;
+        //     default:
+        //       brand_lightBackgound();
+        //       break;
+        //   }
+        // },
     });
     // $.fn.fullpage.moveTo(0,4);
   /*======================================================================*/
