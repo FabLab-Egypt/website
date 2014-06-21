@@ -7,3 +7,15 @@
 [submodule "source/assets/plugins/pace"]
 	path = source/assets/plugins/pace
 	url = https://github.com/HubSpot/pace.git
+[submodule "source/assets/plugins/jquery-match-height"]
+	path = source/assets/plugins/jquery-match-height
+	url = https://github.com/liabru/jquery-match-height.git
+[submodule "source/assets/plugins/scrollReveal.js"]
+	path = source/assets/plugins/scrollReveal.js
+	url = https://github.com/julianlloyd/scrollReveal.js.git
+[submodule "source/assets/plugins/animate.css"]
+	path = source/assets/plugins/animate.css
+	url = https://github.com/daneden/animate.css.git
+[submodule "source/assets/plugins/WOW"]
+	path = source/assets/plugins/WOW
+	url = https://github.com/matthieua/WOW.git
