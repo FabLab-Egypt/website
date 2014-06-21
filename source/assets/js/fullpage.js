@@ -17,23 +17,38 @@ $(document).ready(function() {
   /*======================================================================*/
   /* fullPage -- Initaliz and Configure                                ===*/
     $('#full-page').fullpage({
-        resize : false,
-        animateAnchor: true,
-        verticalCentered: true,
-        // slidesNavigation: true,
+      'resize' : false,
+      'animateAnchor': true,
+      'verticalCentered': true,
 
-        // Callbacks
-        // afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
-        //   console.log('slideIndex: '+slideIndex);
-        //   switch(slideIndex){
-        //     case 2:
-        //       brand_darkBackgound();
-        //       break;
-        //     default:
-        //       brand_lightBackgound();
-        //       break;
-        //   }
-        // },
+      // Callbacks
+      'afterLoad': function(anchorLink, index){
+        console.log('afterLoad::index: '+index);
+        switch(index){
+          case 2:
+            break;
+          case 3:
+              reveal_animate_fadeIn_('#machines-makerbot');
+              break;
+          case 4:
+            default:
+            break;
+        }
+      },
+      'onLeave': function(index, newIndex, direction){
+        console.log('onLeave::index: '+index+'->'+newIndex);
+        switch(index){
+          case 2:
+            console.log(':>:None');
+            break;
+          case 3:
+              reveal_animate_fadeOut_('#machines-makerbot');
+              break;
+          default:
+            break;
+        }
+      },
+
     });
     // $.fn.fullpage.moveTo(0,4);
   /*======================================================================*/

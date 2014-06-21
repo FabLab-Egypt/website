@@ -17,47 +17,11 @@
 
           <address>
             <strong>Open Hours</strong><br>
-            All Week Days From 12:00 PM to 8:00 PM
+            All Week Days:<br>
+            &nbsp;&nbsp;12:00 PM to 8:00 PM
           </address>
         </div>
       </div>
     </div>
   </div>
 </div>
-
-<!-- Include the Google Maps API library - required for embedding maps -->
-<script src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script type="text/javascript">
-
-  // The latitude and longitude of your business / place
-  var position = [30.049019020085613, 31.20098772209326];
-  var fpoint = [30.049007411520297, 31.202280546838438];
-
-  function showGoogleMaps() {
-
-  var latLng = new google.maps.LatLng(position[0], position[1]);
-  var focuse = new google.maps.LatLng(fpoint[0], fpoint[1]);
-
-  var mapOptions = {
-  zoom: 17, // initialize zoom level - the max value is 21
-  streetViewControl: false, // hide the yellow Street View pegman
-  scaleControl: true, // allow users to zoom the Google Map
-  mapTypeId: google.maps.MapTypeId.ROADMAP,
-  center: focuse,
-  scrollwheel: false
-  };
-
-  map = new google.maps.Map(document.getElementById('googlemaps'),
-  mapOptions);
-
-  // Show the default red marker at the location
-  marker = new google.maps.Marker({
-  position: latLng,
-  map: map,
-  draggable: false,
-  animation: google.maps.Animation.DROP
-  });
-  }
-
-  google.maps.event.addDomListener(window, 'load', showGoogleMaps);
-</script>

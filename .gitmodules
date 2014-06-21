@@ -7,3 +7,9 @@
 [submodule "source/assets/plugins/pace"]
 	path = source/assets/plugins/pace
 	url = https://github.com/HubSpot/pace.git
+[submodule "source/assets/plugins/jquery-match-height"]
+	path = source/assets/plugins/jquery-match-height
+	url = https://github.com/liabru/jquery-match-height.git
+[submodule "source/assets/plugins/animate.css"]
+	path = source/assets/plugins/animate.css
+	url = https://github.com/daneden/animate.css.git

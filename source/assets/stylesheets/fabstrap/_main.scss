@@ -1,10 +1,10 @@
-// Core variables and mixins
+/* // Core variables and mixins
 @import "../bootstrap/variables";
 @import "../bootstrap/mixins";
 
 // Bootswatch Flaty
 @import "../flaty-bootswatch/_variables";
-@import "../flaty-bootswatch/_bootswatch";
+@import "../flaty-bootswatch/_bootswatch"; */
 
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 /* Fablab Website main stylesheet                                            */
@@ -12,7 +12,6 @@
 
 .background-light { color: black !important;  }
 .background-dark  { color: whitesmoke !important; }
-.font-lightest { font-weight: 100; }
 
 
 .navbar {
@@ -26,6 +25,25 @@
     padding-left: 50px;
     padding-top: 3px;
     z-index: 5;
+  }
+}
+
+
+.machines {
+  
+  .machine {
+
+    .table {
+      width: 100%;
+      height: 100%;
+      display: table;
+
+      p {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+      }
+    }
   }
 }
 
