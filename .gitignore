@@ -2,3 +2,4 @@ build/
 env/
 .idea
 .sass-cache/
+source/assets/stylesheets/*.css
