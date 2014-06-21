@@ -1,0 +1,84 @@
+// Core variables and mixins
+@import "../bootstrap/variables";
+@import "../bootstrap/mixins";
+
+// Bootswatch Flaty
+@import "../flaty-bootswatch/_variables";
+@import "../flaty-bootswatch/_bootswatch";
+
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/* Fablab Website main stylesheet                                            */
+/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+.background-light { color: black !important;  }
+.background-dark  { color: whitesmoke !important; }
+.font-lightest { font-weight: 100; }
+
+
+.navbar {
+  padding-top: 10px;
+
+  .navbar-brand {
+    /* color: #111!important; */
+    background-image:  url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-size:   auto 45px;
+    padding-left: 50px;
+    padding-top: 3px;
+    z-index: 5;
+  }
+}
+
+
+
+#full-page {
+  /*==========  About  ==========*/
+        #about.section { background: whitesmoke; }
+
+  /*==========  Services  ==========*/
+     #services.section { background: #fdd55e; }
+
+  /*==========  Machines  ==========*/
+     #machines.section { background: #545E63; }
+
+  /*==========  Projects ==========*/
+     #projects.section { background: #43f0f6; }
+
+  /*==========  Membership ==========*/
+  #memberships.section { background: #9c1cbc; }
+
+  /*==========  contacts ==========*/
+     #contacts.section { background: #2163ff; }
+}
+
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

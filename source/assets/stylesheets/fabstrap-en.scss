@@ -1,0 +1,15 @@
+
+// Fab Lab Styles
+@import "fabstrap";
+
+// English LTR
+.section > * { direction: ltr; }
+
+#about {
+  .info {
+    background-color: transparent;
+    padding: 0px 75px;
+
+    > h2 { font-size: 45px; }
+  }
+}

@@ -1,0 +1,40 @@
+
+.continer.pricing-table {
+  margin-top:7%;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .pricing-panel.pt-featured {
+    margin-top: -20px;
+    .panel-heading, .panel-footer { padding:0; }
+  }
+
+  .pricing-panel {
+    h3 {
+      font-size: 500%;
+      small { font-size: 30%; }
+    }
+
+    small {
+      font-size: 100%;
+      font-weight: lighter;
+      font-stretch: normal;
+      font-weight: 400;
+    }
+
+    li {
+      font-style: normal;
+      font-stretch: normal;
+      font-weight: 600;
+
+      i{
+        :hover { /* color:#555; */}
+        .pricing-labsessions { cursor: help; }
+      }
+
+      strong { /* color:#555; */ font-weight:bolder;}
+      .pt-empty { border-color: transparent; }
+      .pt-empty:first-child, .pt-first { /* border-top-color: #DDD !important; */}
+    }
+  }
+}
