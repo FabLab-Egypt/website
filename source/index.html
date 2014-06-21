@@ -15,17 +15,14 @@
 
 {% block fullpage %}
   <div id="full-page">
-    <div id="about" class="section active">
+    <div class="section active" id="about" >
       {% include "_sections/_about-%s.html"|format(LANG) %}
     </div>
-    <div id="memberships" class="section">
+    <div class="section"        id="memberships">
       {% include "_sections/_pricing_table-%s.html"|format(LANG) %}
     </div>
-    <div class="section">
-      <div class="slide"> Slide 1 </div>
-      <div class="slide"> Slide 2 </div>
-      <div class="slide"> Slide 3 </div>
-      <div class="slide"> Slide 4 </div>
+    <div class="section"        id="contact" >
+      {% include "_sections/_contact-%s.html"|format(LANG) %}
     </div>
   </div>
   {% include "_structure/_javascript.html" %}
