@@ -3,6 +3,8 @@
 
 $(function() {
     $('.machines .col').matchHeight();
+    $('.machine-icons').tooltip();
+
 });
 
 /******************************************************/
