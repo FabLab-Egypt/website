@@ -5,7 +5,7 @@ function reveal_animate_fadeIn_(selector)
 }
 
 
-function reveal_animate_fadeInLeft(selector)
+function reveal_animate_fadeInLeft(selector, remove_animation_class)
 {
   $(selector+' .reveal-fadeInLeft')
     .removeClass('invisible')
@@ -14,15 +14,17 @@ function reveal_animate_fadeInLeft(selector)
           'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
           function()
           {
-            $(this)
-              .removeClass('animated')
-                .removeClass('fadeInLeft');
+            if (remove_animation_class){
+              $(this)
+                .removeClass('animated')
+                  .removeClass('fadeInRight');
+            }
           }
         );
 }
 
 
-function reveal_animate_fadeInRight(selector)
+function reveal_animate_fadeInRight(selector, remove_animation_class)
 {
   $(selector+' .reveal-fadeInRight')
     .removeClass('invisible')
@@ -31,9 +33,11 @@ function reveal_animate_fadeInRight(selector)
           'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
           function()
           {
-            $(this)
-              .removeClass('animated')
-                .removeClass('fadeInRight');
+            if (remove_animation_class){
+              $(this)
+                .removeClass('animated')
+                  .removeClass('fadeInRight');
+            }
           }
         );
 }

@@ -23,31 +23,27 @@ $(document).ready(function() {
 
       // Callbacks
       'afterLoad': function(anchorLink, index){
-        console.log('afterLoad::index: '+index);
+        // console.log('afterLoad::index: '+index);
         switch(index){
-          case 2:
-            break;
           case 3:
-              reveal_animate_fadeIn_('#machines-makerbot');
-              break;
-          case 4:
-            default:
+            reveal_animate_fadeIn_('#machines-makerbot',false);
             break;
-        }
-      },
-      'onLeave': function(index, newIndex, direction){
-        console.log('onLeave::index: '+index+'->'+newIndex);
-        switch(index){
-          case 2:
-            console.log(':>:None');
-            break;
-          case 3:
-              reveal_animate_fadeOut_('#machines-makerbot');
-              break;
           default:
+            reveal_animate_fadeIn_('.section.active .machine.vending',false);
             break;
         }
       },
+      // 'onLeave': function(index, newIndex, direction){
+      //   // console.log('onLeave::index: '+index+'->'+newIndex);
+      //   switch(index){
+      //     case 3:
+      //       reveal_animate_fadeOut_('#machines-makerbot');
+      //       break;
+      //     default:
+      //       reveal_animate_fadeOut_('.section.active .machine.vending');
+      //       break;
+      //   }
+      // },
 
     });
     // $.fn.fullpage.moveTo(0,4);
