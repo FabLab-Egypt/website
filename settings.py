@@ -24,3 +24,14 @@ PORT = 8080
 
 ## Your own settings here
 LANG='en' # Language Setting values [ar|en]
+
+#############################
+## THIS IS A HACK FOR SCSS ##
+import sys
+import subprocess
+if 'run' in sys.argv:
+  print ">>> Sass is watching for changes. Proceese is runing in a seprate screen session."
+  subprocess.call(['screen','-d','-m','sass','--watch','source/assets/stylesheets:source/assets/stylesheets'])
+elif 'build' in sys.argv:
+  print "SASS Build"
+  subprocess.call(['sass','source/assets/stylesheets/fabstrap.scss','source/assets/stylesheets/fabstrap.css'])
