@@ -7,10 +7,9 @@
 .font-lightest { font-weight: 100; }
 
 
-.navbar { padding: 10px; border-radius: 0; background-color: #fff;}
-.navbar-brand { color: #111!important; background: url('../images/logo.png') no-repeat; z-index: 5; background-size: auto 45px; padding-left:50px; padding-top: 3px;}
+.navbar { padding-top: 10px;}
+.navbar-brand { /* color: #111!important; */ background: url('../images/logo.png') no-repeat; z-index: 5; background-size: auto 45px; padding-left:50px; padding-top: 3px;}
 
-.section > * { direction: rtl; }
 
 /*==========  About  ==========*/
 #about.section {background: #ffffff; }
