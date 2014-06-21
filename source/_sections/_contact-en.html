@@ -15,6 +15,11 @@
               <li><i class="fa fa-phone"></i> <a href="tel:00201111607406">  (+20) 11-1160-7406</a></li>
             </ul>
           </address>
+
+          <address>
+            <strong>Open Hours</strong><br>
+            All Week Days From 12:00 PM to 8:00 PM
+          </address>
         </div>
       </div>
     </div>
@@ -39,7 +44,8 @@
   streetViewControl: false, // hide the yellow Street View pegman
   scaleControl: true, // allow users to zoom the Google Map
   mapTypeId: google.maps.MapTypeId.ROADMAP,
-  center: focuse
+  center: focuse,
+  scrollwheel: false
   };
 
   map = new google.maps.Map(document.getElementById('googlemaps'),
