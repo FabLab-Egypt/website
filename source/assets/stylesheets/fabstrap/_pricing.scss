@@ -5,11 +5,27 @@
   padding-right: 20px;
 
   .pricing-panel.pt-featured {
-    margin-top: -20px;
+    margin-top: -28px; //margin-top: -20px;
     .panel-heading, .panel-footer { padding:0; }
+
+    .join {
+      button {
+        padding-top:    20px;
+        padding-bottom: 20px;
+      }
+    }
   }
 
   .pricing-panel {
+
+    .join {
+      margin-bottom: 20px;
+      button {
+        padding-left:  50px;
+        padding-right: 50px;
+      }
+    }
+
     h3 {
       font-size: 500%;
       small { font-size: 30%; }
