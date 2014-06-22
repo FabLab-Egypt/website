@@ -46,7 +46,7 @@ import sys
 import subprocess
 if 'run' in sys.argv:
   print ">>> Sass is watching for changes. Proceese is runing in a seprate screen session."
-  subprocess.call(['screen','-d','-m','sass','--watch','source/assets/stylesheets:source/assets/stylesheets'])
+  subprocess.call(['screen','-S','clay-sass','-d','-m','sass','--watch','source/assets/stylesheets:source/assets/stylesheets'])
 elif 'build' in sys.argv:
   print "SASS Build"
   scss_file = 'source/assets/stylesheets/fabstrap-{}.scss'.format(LANG)
