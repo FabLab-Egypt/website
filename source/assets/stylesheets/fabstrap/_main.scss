@@ -34,7 +34,7 @@
 
   .machine {
 
-    .table {
+    .display-table {
       width: 100%;
       height: 100%;
       display: table;
@@ -58,13 +58,13 @@
      #services.section { background: #fdd55e; }
 
   /*==========  Machines  ==========*/
-     #machines.section { background: #545E63; }
+     .machines.section { background: #ecf0f1; }
 
   /*==========  Projects ==========*/
      #projects.section { background: #43f0f6; }
 
   /*==========  Membership ==========*/
-  #memberships.section { background: #9c1cbc; }
+  #memberships.section { background: #89C4F4; }
 
   /*==========  contacts ==========*/
      #contacts.section { background: #2163ff; }
