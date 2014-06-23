@@ -25,6 +25,7 @@ $(document).ready(function() {
             break;
           case 'Contacts':
             reveal_animate('#contacts .map-overlay .panel',  'pulse',   false);
+            // reveal_animate_chain('#contacts .map-overlay .panel',  ['fadeIn','pulse'], ['chain-1','chain-2'], false);
             break;
           default:
             reveal_animate('.section.active .machine.vending .machine-image',  'fadeInLeft',   false);
