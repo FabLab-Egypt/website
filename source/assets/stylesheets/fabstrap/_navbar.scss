@@ -20,6 +20,15 @@
     padding-left: 50px;
     padding-top: 3px;
     z-index: 5;
+
+    img {
+      margin-left: -6px;
+      margin-top: 3px;
+    }
+
+    > span {
+      display: block;
+    }
   }
 
   .dropdown-combo{
