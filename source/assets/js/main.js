@@ -6,8 +6,11 @@ $(function() {
     $('.machine-icons').tooltip();
     Pace.on('done', function(){
       console.log("pace-done");
-      reveal_animate('#about .reveal h2',  'fadeInUp',  false, 'animation-delay-500ms')
-      reveal_animate('#about .reveal p', 'fadeInDown',  false, 'animation-delay-700ms')
+      reveal_animate('#header .navbar', 'fadeInDown',  false, 'animation-delay-100ms');
+        reveal_animate('#header .navbar .navbar-brand', 'fadeInDown',  false, 'animation-delay-200ms');
+        reveal_animate('#header .navbar ul.nav', 'fadeInDown',  false, 'animation-delay-200ms');
+      reveal_animate('#about .reveal h2',  'fadeInUp',  false, 'animation-delay-500ms');
+      reveal_animate('#about .reveal p', 'fadeInDown',  false, 'animation-delay-700ms');
     })
 });
 
