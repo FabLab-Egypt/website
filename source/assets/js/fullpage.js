@@ -21,7 +21,7 @@ $(document).ready(function() {
             reveal_animate('#machines-makerbot .machine-info',  'fadeInRight',  false, 'animation-delay-300ms');
             break;
           case 'Memberships':
-            reveal_animate('#memberships .pricing-table .panel',  'fadeInUpBig',   false);
+            reveal_animate('#memberships .pricing-table .panel',  'fadeInUpBig', false);
             break;
           case 'Contacts':
             reveal_animate('#contacts .map-overlay .panel',  'pulse',   false);
