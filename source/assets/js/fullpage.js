@@ -1,35 +1,34 @@
 /*======================================================================*/
-/* Brand Text-Color vs Slide Backgound                               ===*/
-  function brand_darkBackgound(){
-        $('#brand .title h2').switchClass('background-light','background-dark', 100, "easeInOutQuad");
-        $('#brand .title ul').switchClass('background-light','background-dark', 100, "easeInOutQuad");
-  };
-  function brand_lightBackgound(){
-        $('#brand .title h2').switchClass('background-dark', 'background-light', 100, "easeInOutQuad");
-        $('#brand .title ul').switchClass('background-dark', 'background-light', 100, "easeInOutQuad");
-  }
-/*======================================================================*/
-
-/*======================================================================*/
 /*=== Execute On Documente Ready                                     ===*/
 $(document).ready(function() {
 
   /*======================================================================*/
   /* fullPage -- Initaliz and Configure                                ===*/
     $('#full-page').fullpage({
-      'resize' : false,
+      'anchors': ['About', 'Machines', '3D-Printer', 'Laser-Cutter', 'Milling-Machine', 'Vinly-Cutter', 'Power-Tools', 'Memberships', 'Contacts', ],
       'animateAnchor': true,
+      'autoScrolling': true,
+      'easing': 'easeInQuart',
+      'resize' : false,
       'verticalCentered': true,
 
-      // Callbacks
+      //////////////////////////////////////////////////////
+      // Callbacks                                        //
       'afterLoad': function(anchorLink, index){
-        // console.log('afterLoad::index: '+index);
-        switch(index){
-          case 3:
-            reveal_animate_fadeIn_('#machines-makerbot',false);
+        switch(anchorLink) {
+          case '3D-Printer':
+            reveal_animate('#machines-makerbot .machine-image',  'fadeInLeft',   false, 'animation-delay-100ms');
+            reveal_animate('#machines-makerbot .machine-info',  'fadeInRight',  false, 'animation-delay-300ms');
+            break;
+          case 'Memberships':
+            reveal_animate('#memberships .pricing-table .panel',  'fadeInUpBig',   false);
+            break;
+          case 'Contacts':
+            reveal_animate('#contacts .map-overlay .panel',  'pulse',   false);
             break;
           default:
-            reveal_animate_fadeIn_('.section.active .machine.vending',false);
+            reveal_animate('.section.active .machine.vending .machine-image',  'fadeInLeft',   false);
+            reveal_animate('.section.active .machine.vending .machine-info',  'fadeInRight',  false, 'animation-delay-300ms');
             break;
         }
       },
@@ -44,9 +43,11 @@ $(document).ready(function() {
       //       break;
       //   }
       // },
+      //                                        Callbacks //
+      //////////////////////////////////////////////////////
+
 
     });
-    // $.fn.fullpage.moveTo(0,4);
   /*======================================================================*/
 
   /*======================================================================*/
