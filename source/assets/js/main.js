@@ -2,7 +2,6 @@
 /** jquery-match-height                              **/
 
 $(function() {
-    $('.contacts-map.match-height').matchHeight();
     $('.machines .col').matchHeight();
     $('.machine-icons').tooltip();
     Pace.on('done', function(){
