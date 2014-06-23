@@ -4,7 +4,11 @@
 $(function() {
     $('.machines .col').matchHeight();
     $('.machine-icons').tooltip();
-
+    Pace.on('done', function(){
+      console.log("pace-done");
+      reveal_animate('#about .reveal h2',  'fadeInUp',  false, 'animation-delay-500ms')
+      reveal_animate('#about .reveal p', 'fadeInDown',  false, 'animation-delay-700ms')
+    })
 });
 
 /******************************************************/
