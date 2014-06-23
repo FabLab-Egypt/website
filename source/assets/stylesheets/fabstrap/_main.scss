@@ -56,6 +56,38 @@
 }
 
 
+/* Animated */
+
+@mixin animation-delay($t) {
+  -webkit-animation-delay: $t;
+     -moz-animation-delay: $t;
+      -ms-animation-delay: $t;
+          animation-delay: $t;
+}
+
+
+.animation-delay-100ms { @include animation-delay(0.1s); }
+.animation-delay-200ms { @include animation-delay(0.2s); }
+.animation-delay-300ms { @include animation-delay(0.3s); }
+.animation-delay-400ms { @include animation-delay(0.4s); }
+.animation-delay-500ms { @include animation-delay(0.5s); }
+.animation-delay-600ms { @include animation-delay(0.6s); }
+.animation-delay-700ms { @include animation-delay(0.7s); }
+.animation-delay-800ms { @include animation-delay(0.8s); }
+.animation-delay-900ms { @include animation-delay(0.9s); }
+
+.animation-delay-1000ms { @include animation-delay(1s); }
+.animation-delay-2000ms { @include animation-delay(2s); }
+.animation-delay-3000ms { @include animation-delay(3s); }
+.animation-delay-4000ms { @include animation-delay(4s); }
+.animation-delay-5000ms { @include animation-delay(5s); }
+.animation-delay-6000ms { @include animation-delay(6s); }
+.animation-delay-7000ms { @include animation-delay(7s); }
+.animation-delay-8000ms { @include animation-delay(8s); }
+.animation-delay-9000ms { @include animation-delay(9s); }
+.animation-delay-10000ms { @include animation-delay(10s); }
+
+
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
