@@ -15,26 +15,26 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#About"      onclick="$.fn.fullpage.moveTo(1);">About</a></li>
-        <li><a href="#Services">Services</a></li>
-        <li class="dropdown dropdown-combo">
-          <a href="#Machines"   onclick="$.fn.fullpage.moveTo(2);">Machines
+        <li data-menuanchor="About"><a href="#About">About</a></li>
+        <li data-menuanchor="Services"><a href="#Services">Services</a></li>
+        <li data-menuanchor="Machines" class="dropdown dropdown-combo">
+          <a href="#Machines">Machines
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-chevron-down fa-xs"></i></a>
             <ul class="dropdown-menu">
-              <li><a href="#Machines-3DPrinter" onclick="$.fn.fullpage.moveTo(3);">
+              <li data-menuanchor="3D-Printer"><a href="#3D-Printer">
                 <!-- <img class="machine-icons 3dprinter" alt="3D Printer" src="assets/images/icon-3dprinter.png" height="20"> -->
                 3D Printer</a>
               </li>
-              <li><a href="#Machines-LaserCutter">Laser Cutter</a></li>
-              <li><a href="#Machines-MillingMachine">Milling Machine</a></li>
-              <li><a href="#Machines-VinlyCutter">Vinly Cutter</a></li>
-              <li><a href="#Machines-PowerTools">Power Tools</a></li>
+              <li data-menuanchor="Laser-Cutter"><a href="#Laser-Cutter">Laser Cutter</a></li>
+              <li data-menuanchor="Milling-Machine"><a href="#Milling-Machine">Milling Machine</a></li>
+              <li data-menuanchor="Vinly-Cutter"><a href="#Vinly-Cutter">Vinly Cutter</a></li>
+              <li data-menuanchor="Power-Tools"><a href="#Power-Tools">Power Tools</a></li>
             </ul>
           </a>
         </li>
-        <li><a href="#Projects">Projects</a></li>
-        <li><a href="#Membership" onclick="$.fn.fullpage.moveTo(7);">Memberships</a></li>
-        <li><a href="#Contact"    onclick="$.fn.fullpage.moveTo(8);">Contact</a></li>
+        <li data-menuanchor="Projects"><a href="#Projects">Projects</a></li>
+        <li data-menuanchor="Memberships"><a href="#Memberships">Memberships</a></li>
+        <li data-menuanchor="Contacts"><a href="#Contacts">Contacts</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
