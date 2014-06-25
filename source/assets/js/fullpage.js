@@ -17,8 +17,8 @@ $(document).ready(function() {
       'afterLoad': function(anchorLink, index){
         switch(anchorLink) {
           case '3D-Printer':
-            reveal_animate('#machines-makerbot .machine-image',  'fadeInLeft',   false, 'animation-delay-100ms');
-            reveal_animate('#machines-makerbot .machine-info',  'fadeInRight',  false, 'animation-delay-300ms');
+            reveal_animate('#machines-makerbot .machine-image',  'fadeInRight',   false, 'animation-delay-100ms');
+            reveal_animate('#machines-makerbot .machine-info',  'fadeInLeft',  false, 'animation-delay-300ms');
             break;
           case 'Laser-Cutter':
             reveal_animate('#machines-morn .machine-image',  'fadeInLeft',   false, 'animation-delay-100ms');
@@ -40,8 +40,8 @@ $(document).ready(function() {
             // reveal_animate_chain('#contacts .map-overlay .panel',  ['fadeIn','pulse'], ['chain-1','chain-2'], false);
             break;
           default:
-            reveal_animate('.section.active .machine.vending .machine-image',  'fadeInLeft',   false);
-            reveal_animate('.section.active .machine.vending .machine-info',  'fadeInRight',  false, 'animation-delay-300ms');
+            reveal_animate('.section.active .machine.vending .machine-image',  'fadeInRight',   false);
+            reveal_animate('.section.active .machine.vending .machine-info',  'fadeInLeft',  false, 'animation-delay-300ms');
             break;
         }
       },
