@@ -1,5 +1,5 @@
 
-function reveal_animate(selector, animation, remove_animation_class, addclasses)
+function reveal_animate(selector, animation, remove_animation_class, addclasses, completionClasses)
 {
   $(selector)
     .removeClass('invisible')
@@ -12,6 +12,11 @@ function reveal_animate(selector, animation, remove_animation_class, addclasses)
               $(this)
                 .removeClass('animated')
                   .removeClass(animation);
+            }
+
+            if(completionClasses){
+              $(this)
+                .addClass(completionClasses)
             }
           }
         );
