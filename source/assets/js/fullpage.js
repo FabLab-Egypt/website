@@ -5,7 +5,7 @@ $(document).ready(function() {
   /*======================================================================*/
   /* fullPage -- Initaliz and Configure                                ===*/
     $('#full-page').fullpage({
-      'anchors': ['About', 'Machines', '3D-Printer', 'Laser-Cutter', 'Vinly-Cutter', 'Milling-Machine', 'Power-Tools', 'Memberships', 'Contacts', ],
+      'anchors': ['About','Services' ,'Machines', '3D-Printer', 'Laser-Cutter', 'Vinly-Cutter', 'Milling-Machine', 'Power-Tools', 'Memberships', 'Contacts', ],
       'animateAnchor': true,
       'autoScrolling': true,
       'easing': 'easeInQuart',

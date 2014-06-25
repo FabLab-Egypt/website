@@ -2,6 +2,7 @@
 /** jquery-match-height                              **/
 
 $(function() {
+    $('#services .thumbnail').matchHeight();
     $('.machines .col').matchHeight();
     $('.machine-icons').tooltip();
     Pace.on('done', function(){
