@@ -5,7 +5,7 @@ $(document).ready(function() {
   /*======================================================================*/
   /* fullPage -- Initaliz and Configure                                ===*/
     $('#full-page').fullpage({
-      'anchors': ['About', 'Machines', '3D-Printer', 'Laser-Cutter', 'Milling-Machine', 'Vinly-Cutter', 'Power-Tools', 'Memberships', 'Contacts', ],
+      'anchors': ['About', 'Machines', '3D-Printer', 'Laser-Cutter', 'Vinly-Cutter', 'Milling-Machine', 'Power-Tools', 'Memberships', 'Contacts', ],
       'animateAnchor': true,
       'autoScrolling': true,
       'easing': 'easeInQuart',
@@ -19,6 +19,18 @@ $(document).ready(function() {
           case '3D-Printer':
             reveal_animate('#machines-makerbot .machine-image',  'fadeInLeft',   false, 'animation-delay-100ms');
             reveal_animate('#machines-makerbot .machine-info',  'fadeInRight',  false, 'animation-delay-300ms');
+            break;
+          case 'Laser-Cutter':
+            reveal_animate('#machines-morn .machine-image',  'fadeInLeft',   false, 'animation-delay-100ms');
+            reveal_animate('#machines-morn .machine-info',  'fadeInRight',  false, 'animation-delay-300ms');
+            break;
+          case 'Milling-Machine':
+            reveal_animate('#machines-modela .machine-image',  'fadeInLeft',   false, 'animation-delay-100ms');
+            reveal_animate('#machines-modela .machine-info',  'fadeInRight',  false, 'animation-delay-300ms');
+            break;
+          case 'Vinly-Cutter':
+            reveal_animate('#machines-vinyl .machine-image',  'fadeInRight',   false, 'animation-delay-100ms');
+            reveal_animate('#machines-vinyl .machine-info',  'fadeInLeft',  false, 'animation-delay-300ms');
             break;
           case 'Memberships':
             reveal_animate('#memberships .pricing-table .panel',  'fadeInUpBig', false);
