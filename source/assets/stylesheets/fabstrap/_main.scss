@@ -131,6 +131,12 @@ $youtube:       #e52d27;
 
 }
 
+@media only screen and (max-height : 600px) {
+  .continer.pricing-table .pricing-panel *  { font-size: 13px !important;}
+  .continer.pricing-table .pricing-panel h3 { font-size: 350% !important;}
+}
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 
@@ -138,6 +144,22 @@ $youtube:       #e52d27;
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+    .services .continer {
+      margin-left: 50px;
+      width: 924px;
+
+      .col {
+
+        width: 700px !important;
+        .thumbnail {
+            width: 100% !important;
+            display: table !important; /* inline-block !important; */
+            img { float: left  !important; display: table-column !important; height: 128px !important; width: 128!important;}
+            .caption { float: left !important; display: table-column !important; text-align: left; }
+        }
+      }
+   }
+
 
 }
 
