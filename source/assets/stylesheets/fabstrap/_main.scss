@@ -10,11 +10,20 @@
 /* Fablab Website main stylesheet                                            */
 /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
 
+
+$facebook:      #3b5998;
+$flickr_blue:   #0063dc;
+$flickr_pink:   #ff0084;
+$twitter:       #55acee;
+$youtube:       #e52d27;
+
+
 .background-light { color: black !important;  }
 .background-dark  { color: whitesmoke !important; }
 
 .hXL { font-size: 45px; }
 .display-block{ display: block; }
+
 
 
 .machines {
@@ -39,22 +48,43 @@
 
 #full-page {
   /*==========  About  ==========*/
-        #about.section { background: whitesmoke; }
+    #about.section { background: whitesmoke; }
 
   /*==========  Services  ==========*/
-     #services.section { background: #fdd55e; }
+    #services.section { background: #fdd55e; }
 
   /*==========  Machines  ==========*/
-     .machines.section { background: #ecf0f1; }
+    .machines.section { background: #ecf0f1; }
 
   /*==========  Projects ==========*/
-     #projects.section { background: #43f0f6; }
+    #projects.section { background: #43f0f6; }
 
   /*==========  Membership ==========*/
-  #memberships.section { background: #89C4F4; }
+    #memberships.section { background: #89C4F4; }
 
   /*==========  contacts ==========*/
-     #contacts.section { background: #2163ff; }
+    #contacts.section { background: #2163ff; }
+
+  /*=========================================*/
+
+   .social{
+
+      a{ color: $brand-primary !important; }
+
+      .facbook{ :hover, :focus {color: $facebook; } }
+
+      .twitter{ :hover, :focus {color: $twitter; } }
+
+       .youtube{ :hover, :focus {color: $youtube; } }
+
+       .flickr{
+          :hover, :focus{
+            color: #e6e6e6;
+            .flickr-left {color: $flickr_blue; }
+            .flickr-right {color: $flickr_pink; }
+         }
+       }
+     }
 }
 
 
