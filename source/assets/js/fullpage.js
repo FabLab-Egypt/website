@@ -41,6 +41,10 @@ $(document).ready(function() {
             reveal_animate('#machines-vinyl .machine-image',  'fadeInRight',   false, 'animation-delay-100ms');
             reveal_animate('#machines-vinyl .machine-info',  'fadeInLeft',  false, 'animation-delay-300ms');
             break;
+          case 'Power-Tools':
+            reveal_animate('.section.active .machine.vending .machine-image',  'fadeInRight',   false, 'animation-delay-100ms');
+            reveal_animate('.section.active .machine.vending .machine-info',  'fadeInLeft',  false, 'animation-delay-300ms');
+            break;
           // case 'Memberships':
           //   reveal_animate('#memberships .pricing-table .panel',  'fadeInUpBig', false);
           //   break;
@@ -49,8 +53,8 @@ $(document).ready(function() {
           //   // reveal_animate_chain('#contacts .map-overlay .panel',  ['fadeIn','pulse'], ['chain-1','chain-2'], false);
           //   break;
           default:
-              reveal_animate('.section.active .machine.vending .machine-image',  'fadeInRight',   false);
-              reveal_animate('.section.active .machine.vending .machine-info',  'fadeInLeft',  false, 'animation-delay-300ms');
+            // reveal_animate('.section.active .machine.vending .machine-image',  'fadeInRight',   false);
+            // reveal_animate('.section.active .machine.vending .machine-info',  'fadeInLeft',  false, 'animation-delay-300ms');
             break;
         }
       },
