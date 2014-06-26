@@ -49,8 +49,8 @@ $(document).ready(function() {
           //   // reveal_animate_chain('#contacts .map-overlay .panel',  ['fadeIn','pulse'], ['chain-1','chain-2'], false);
           //   break;
           default:
-            // reveal_animate('.section.active .machine.vending .machine-image',  'fadeInRight',   false);
-            // reveal_animate('.section.active .machine.vending .machine-info',  'fadeInLeft',  false, 'animation-delay-300ms');
+              reveal_animate('.section.active .machine.vending .machine-image',  'fadeInRight',   false);
+              reveal_animate('.section.active .machine.vending .machine-info',  'fadeInLeft',  false, 'animation-delay-300ms');
             break;
         }
       },
