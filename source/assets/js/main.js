@@ -4,6 +4,10 @@
 $(function() {
     $('#services .thumbnail').matchHeight();
     $('.machines .col').matchHeight();
+    $('#memberships .mt-height-1').matchHeight();
+    $('#memberships .mt-height-3').matchHeight();
+    $('#memberships .mt-height-6').matchHeight();
+    $('#memberships .mt-height-12').matchHeight();
     $('.machine-icons').tooltip();
     Pace.on('done', function(){
       console.log("pace-done");

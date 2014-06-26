@@ -120,6 +120,13 @@ $youtube:       #e52d27;
 .animation-delay-10000ms { @include animation-delay(10s); }
 
 
+@mixin rotate($deg) {
+  -webkit-transform: rotate($deg);
+  -moz-transform: rotate($deg);
+  -ms-transform: rotate($deg);
+  -o-transform: rotate($deg);
+}
+
 /*==================================================
 =            Bootstrap 3 Media Queries             =
 ==================================================*/
@@ -173,14 +180,52 @@ $youtube:       #e52d27;
    #memberships {
 
 
-      .pricing-panel-sm.pt-featured { margin-top: 0 !important; }
       .pricing-table  {
 
-        > div {
-          display: table !important;
-          > span, > ul {
-            display: table-cell !important;
-            vertical-align: middle;
+        .pt-sm{
+
+          .pt-sm-tbl {
+            display: table !important;
+            .pt-sm-tbl-cell{
+              display: table-cell !important;
+              vertical-align: middle;
+            }
+          }
+
+          h3 { font-size: 330%;
+            small{ font-size: 40%}
+          }
+          small.pst-off {top: -20px; position: relative;}
+        }
+        .pt-ft-sm {
+
+          .panel {
+            border: 3px solid $brand-success;
+            border-radius: 4px;
+          }
+          .pt-ft-sm-lable{
+            background-color: $brand-success;
+            border: 7px solid $brand-success;
+            border-radius: 4px 0px 0px 4px;
+            height: 134px;
+            left: -42px;
+            width: 45px;
+            padding: 0px 0px 0px 11px;
+            position: absolute;
+            top: -3px;
+
+            span {
+              transform: rotate(-90deg);
+              height: 100% !important;
+              width: 300% !important;
+              position: absolute;
+              /* padding: 0px; */
+              /* margin: 0px; */
+              /* line-height: 1; */
+              /* display: block; */
+              /* margin-top: 22px; */
+              @include rotate(-90deg);
+            }
           }
         }
       }
