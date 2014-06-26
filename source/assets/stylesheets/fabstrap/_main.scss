@@ -147,15 +147,22 @@ $youtube:       #e52d27;
     .services .continer {
       margin-left: 50px;
       width: 924px;
-
       .col {
-
         width: 700px !important;
         .thumbnail {
+            display: table !important;
             width: 100% !important;
-            display: table !important; /* inline-block !important; */
-            img { float: left  !important; display: table-column !important; height: 128px !important; width: 128!important;}
-            .caption { float: left !important; display: table-column !important; text-align: left; }
+            img {
+              display: table-column !important;
+              float: left  !important;
+              height: 128px !important;
+              width: 128!important;
+            }
+            .caption {
+              display: table-column !important;
+              float: left !important;
+              text-align: left;
+            }
         }
       }
    }
