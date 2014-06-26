@@ -132,8 +132,11 @@ $youtube:       #e52d27;
 }
 
 @media only screen and (max-height : 600px) {
-  .continer.pricing-table .pricing-panel *  { font-size: 13px !important;}
-  .continer.pricing-table .pricing-panel h3 { font-size: 350% !important;}
+  .continer.pricing-table .pricing-panel {
+    *  { font-size: 13px !important;}
+    h3 { font-size: 350% !important;}
+  }
+
 }
 
 
@@ -165,6 +168,23 @@ $youtube:       #e52d27;
             }
         }
       }
+   }
+
+   #memberships {
+
+
+      .pricing-panel-sm.pt-featured { margin-top: 0 !important; }
+      .pricing-table  {
+
+        > div {
+          display: table !important;
+          > span, > ul {
+            display: table-cell !important;
+            vertical-align: middle;
+          }
+        }
+      }
+
    }
 
 
