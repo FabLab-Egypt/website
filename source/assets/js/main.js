@@ -5,12 +5,15 @@ $(function() {
     $('#services .thumbnail').matchHeight();
     $('.machines .col').matchHeight();
     $('.machine-icons').tooltip();
+    Pace.once('done', function(){
+      reveal_animate('.pace.pace-active', 'flipOutX',  false);
+    });
     Pace.on('done', function(){
       console.log("pace-done");
-      reveal_animate('#header .navbar', 'fadeInDown',  false, 'animation-delay-100ms');
-        reveal_animate('#header .navbar .navbar-brand', 'fadeInDown',  false, 'animation-delay-200ms');
-        reveal_animate('#header .navbar ul.nav', 'fadeInDown',  false, 'animation-delay-200ms');
-      reveal_animate('#about .reveal h2',  'fadeInUp',  false, 'animation-delay-500ms');
+      reveal_animate('#header .navbar', 'fadeInDown',  false, 'animation-delay-200ms');
+        reveal_animate('#header .navbar .navbar-brand', 'fadeInDown',  false, 'animation-delay-300ms');
+        reveal_animate('#header .navbar ul.nav', 'fadeInDown',  false, 'animation-delay-300ms');
+      reveal_animate('#about .reveal h2',  'fadeInUp',  false, 'animation-delay-600ms');
       reveal_animate('#about .reveal p', 'fadeInDown',  false, 'animation-delay-700ms');
     });
 });
