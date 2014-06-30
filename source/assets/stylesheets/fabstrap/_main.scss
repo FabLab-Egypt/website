@@ -18,6 +18,14 @@ $twitter:       #55acee;
 $youtube:       #e52d27;
 
 
+@mixin background-cover() {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
 .background-light { color: black !important;  }
 .background-dark  { color: whitesmoke !important; }
 
@@ -48,13 +56,36 @@ $youtube:       #e52d27;
 
 #full-page {
   /*==========  About  ==========*/
-    #about.section { background: whitesmoke; }
+    #about.section {
+      background: whitesmoke;
+      background-image: url(../images/bgs/about.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      @include background-cover();
+
+      .info {
+        background-color: rgba(235, 240, 241, 0.7);
+        padding: 10px;
+        padding-bottom: 25px;
+      }
+    }
 
   /*==========  Services  ==========*/
     #services.section { background: #fdd55e; }
 
   /*==========  Machines  ==========*/
     .machines.section { background: #ecf0f1; }
+
+    #machines-makerbot {
+      background-image: url(../images/bgs/3dprinter.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      @include background-cover();
+
+      .machine.makerbot {
+        background: #ecf0f1;
+      }
+    }
 
   /*==========  Projects ==========*/
     #projects.section { background: #43f0f6; }
