@@ -1,21 +1,35 @@
 /******************************************************/
-/** jquery-match-height                              **/
+/** On Document Load                                 **/
 
-$(function() {
+$(function()
+{
+    //BS: tooltip
+    $('.machine-icons').tooltip();
+
+    // MatchHeightJS
     $('#services .thumbnail').matchHeight();
     $('.machines .col').matchHeight();
-    $('.machine-icons').tooltip();
+
+    // PaceJS: As Pace Complete
     Pace.once('done', function(){
       reveal_animate('.pace.pace-active', 'flipOutX',  false);
     });
+
+    // PaceJS: After Pace Complete
     Pace.on('done', function(){
-      console.log("pace-done");
       reveal_animate('#header .navbar', 'fadeInDown',  false, 'animation-delay-200ms');
         reveal_animate('#header .navbar .navbar-brand', 'fadeInDown',  false, 'animation-delay-300ms');
         reveal_animate('#header .navbar ul.nav', 'fadeInDown',  false, 'animation-delay-300ms');
       reveal_animate('#about .reveal h2',  'fadeInUp',  false, 'animation-delay-600ms');
       reveal_animate('#about .reveal p', 'fadeInDown',  false, 'animation-delay-700ms');
     });
+
+    // Socila Links Hover Animation
+    $('.social > .col').mouseenter(
+      function(){
+        reveal_animate(this, 'tada',  true);
+      }
+    );
 });
 
 /******************************************************/
