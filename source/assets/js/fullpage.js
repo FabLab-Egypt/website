@@ -5,7 +5,7 @@ $(document).ready(function() {
   /*======================================================================*/
   /* fullPage -- Initaliz and Configure                                ===*/
     $('#full-page').fullpage({
-      'anchors': ['About', 'Services', 'Machines', '3D-Printer', 'Laser-Cutter', 'Vinly-Cutter', 'Milling-Machine', 'Power-Tools', 'Memberships', 'Contacts', ],
+      'anchors': ['About', 'Services', 'Machines', '3D-Printer', 'Laser-Cutter', 'Vinly-Cutter', 'Milling-Machine', 'Memberships', 'Contacts', ],
       'animateAnchor': true,
       'autoScrolling': true,
       'easing': 'easeInQuart',
@@ -41,10 +41,10 @@ $(document).ready(function() {
             reveal_animate('#machines-vinyl .machine-image',  'fadeInRight',   false, 'animation-delay-100ms');
             reveal_animate('#machines-vinyl .machine-info',  'fadeInLeft',  false, 'animation-delay-300ms');
             break;
-          case 'Power-Tools':
-            reveal_animate('.section.active .machine.vending .machine-image',  'fadeInRight',   false, 'animation-delay-100ms');
-            reveal_animate('.section.active .machine.vending .machine-info',  'fadeInLeft',  false, 'animation-delay-300ms');
-            break;
+          // case 'Power-Tools':
+          //   reveal_animate('.section.active .machine.vending .machine-image',  'fadeInRight',   false, 'animation-delay-100ms');
+          //   reveal_animate('.section.active .machine.vending .machine-info',  'fadeInLeft',  false, 'animation-delay-300ms');
+          //   break;
           // case 'Memberships':
           //   reveal_animate('#memberships .pricing-table .panel',  'fadeInUpBig', false);
           //   break;
@@ -60,7 +60,7 @@ $(document).ready(function() {
       },
       'onLeave': function(index, newIndex, direction){
         console.log('onLeave::index: '+index+'->'+newIndex+'  '+direction);
-        anchors = ['About', 'Services' ,'Machines', '3D-Printer', 'Laser-Cutter', 'Vinly-Cutter', 'Milling-Machine', 'Power-Tools', 'Memberships', 'Contacts' ];
+        anchors = ['About', 'Services' ,'Machines', '3D-Printer', 'Laser-Cutter', 'Vinly-Cutter', 'Milling-Machine', 'Memberships', 'Contacts' ];
         comingSection  = anchors[newIndex-1];
         pastingSection = anchors[index-1];
         console.log('onLeave::index: '+pastingSection+'->'+comingSection+'  '+direction);
