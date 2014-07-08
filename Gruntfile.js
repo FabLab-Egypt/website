@@ -1,4 +1,4 @@
-// Generated on 2014-07-08 using generator-webapp 0.4.9
+// Generated on 2014-07-07 using generator-webapp 0.4.9
 'use strict';
 
 // # Globbing
@@ -47,6 +47,10 @@ module.exports = function (grunt) {
             gruntfile: {
                 files: ['Gruntfile.js']
             },
+            jade:{
+                files: ['<%= config.app %>/{,*/}*.jade'],
+                tasks: ['jade']
+            },
             sass: {
                 files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
                 tasks: ['sass:server', 'autoprefixer']
@@ -61,6 +65,7 @@ module.exports = function (grunt) {
                 },
                 files: [
                     '<%= config.app %>/{,*/}*.html',
+                    '<%= config.app %>/{,*/}*.jade',
                     '.tmp/styles/{,*/}*.css',
                     '<%= config.app %>/images/{,*/}*'
                 ]
@@ -147,6 +152,23 @@ module.exports = function (grunt) {
                 }
             }
         },
+
+        // Compiles jade to HTML
+        jade: {
+            dist: {
+                options: {
+                  pretty: true
+            },
+            files: [{
+              expand: true,
+              cwd: '<%= config.app %>',
+              dest: '.tmp',
+              src: '*.jade',
+              ext: '.html'
+            }]
+          }
+        },
+
 
         // Compiles Sass to CSS and generates necessary files if requested
         sass: {
@@ -380,6 +402,7 @@ module.exports = function (grunt) {
 
         grunt.task.run([
             'clean:server',
+            'jade',
             'concurrent:server',
             'autoprefixer',
             'connect:livereload',
@@ -409,6 +432,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
+        'jade',
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
