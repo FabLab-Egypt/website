@@ -1,5 +1,6 @@
-build/
-env/
-.idea
-.sass-cache/
-source/assets/stylesheets/*.css
+node_modules
+dist
+.tmp
+.sass-cache
+bower_components
+test/bower_components
