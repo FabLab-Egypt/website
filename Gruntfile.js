@@ -48,8 +48,12 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
             jade:{
-                files: ['<%= config.app %>/{,*/}*.jade'],
-                tasks: ['jade']
+                files: ['<%= config.app %>/{,*/}*.jade',
+                        '<%= config.app %>/template/{,*/}*.jade'],
+                tasks: ['jade'],
+                options: {
+                    livereload: true
+                }
             },
             sass: {
                 files: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
