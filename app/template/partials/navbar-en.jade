@@ -1,0 +1,58 @@
+#header.continer
+    #fablab-mainNav.navbar.navbar-default.invisible(role="navigation")
+        .container-fluid
+        //- Brand and toggle get grouped for better mobile display
+        .navbar-header
+            button.navbar-toggle(type="button", data-toggle="collapse")
+                span.sr-only
+                    | Toggle navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+            a#About.navbar-brand.invisible(data-menuanchor="About")
+                span
+                    | Fab Lab
+                    span.font-lightest
+                        | &nbsp;Egypt
+                span: img.slogen(
+                    alt="learn - make - share"
+                    src="images/logo-slogen.png"
+                    width="145")
+        .collapse.navbar-collapse
+            ul.nav.navbar-nav.navbar-right.invisible.hidden-xs.hidden-sm
+                li(data-menuanchor="About")
+                    a(href="#About")
+                        | About
+                li(data-menuanchor="Services")
+                    a(href="#Services")
+                        | Services
+                li.dropdown.dropdown-combo(data-menuanchor="Machines")
+                    a(href="#Machines")
+                        | Machines
+                    a.dropdown-toggle(href="#",data-toggle="dropdown")
+                        i.fa.fa-chevron-down.fa-xs
+                    ul.dropdown-menu
+                        li(data-menuanchor="3D-Printer")
+                            a(href="#3D-Printer")
+                                | 3D Printer
+                        li(data-menuanchor="Laser-Cutter")
+                            a(href="#Laser-Cutter")
+                                | Laser Cutter
+                        li(data-menuanchor="Milling-Machine")
+                            a(href="#Milling-Machine")
+                                | Milling Machine
+                        li(data-menuanchor="Vinly-Cutter")
+                            a(href="#Vinly-Cutter")
+                                | Vinly Cutter
+                        li(data-menuanchor="Power-Tools")
+                            a(href="#Power-Tools")
+                                | Power Tools
+                        li(data-menuanchor="3D-Printer")
+                            a(href="#3D-Printer")
+                                | 3D Printer
+                li(data-menuanchor="Memberships")
+                    a(href="#Memberships")
+                        | Memberships
+                li(data-menuanchor="Contacts")
+                    a(href="#Contacts")
+                        | Contacts
