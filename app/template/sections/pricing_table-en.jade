@@ -1,16 +1,10 @@
-<div class="continer pricing-table">
-  <div class="row">
-    <div class="col col-sm-2 col-sm-offset-2">
-      {% include "_sections/_pricing_table-en/1mo.html" %}
-    </div>
-    <div class="col col-sm-2">
-      {% include "_sections/_pricing_table-en/3mo.html" %}
-    </div>
-    <div class="col col-sm-2">
-      {% include "_sections/_pricing_table-en/6mo.html" %}
-    </div>
-    <div class="col col-sm-2">
-      {% include "_sections/_pricing_table-en/12mo.html" %}
-    </div>
-  </div>
-</div>
+.continer.pricing-table
+    .row
+        .col.col-sm-2.col-sm-offset-2
+            include pricing_table_en/01mo
+        .col.col-sm-2
+            include pricing_table_en/03mo
+        .col.col-sm-2
+            include pricing_table_en/06mo
+        .col.col-sm-2
+            include pricing_table_en/12mo
