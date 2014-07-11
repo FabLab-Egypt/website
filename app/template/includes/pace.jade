@@ -1,5 +1,11 @@
 // PACE: Page loader
-script(src="bower_components/pace/pace.min.js",type="text/javascript",charset="utf-8")
-link(href="styles/pace.css",rel="stylesheet",type="text/css")
-script(type="text/javascript") pace.start();
+// build:js(.) scripts/pace.js
+// bower:js
+script(src='bower_components/pace/pace.min.js',type='text/javascript',charset='utf-8')
+// endbower
+// endbuild
+// build:css(.tmp) styles/pace.css
+link(href='styles/pace.css',rel='stylesheet',type='text/css')
+// endbuild
+script(type='text/javascript') pace.start();
 // /PACE

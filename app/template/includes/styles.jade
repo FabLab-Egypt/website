@@ -2,10 +2,17 @@
 //- CDN
 
 //- plugins
+// build:css(.tmp) styles/jquery-ui.css
+// bower:css
 link(href="bower_components/jqueryui/themes/smoothness/jquery-ui.css",rel="stylesheet",,type="text/css")
 //- link(href="bower_components/animate.css/animate.min.css",rel="stylesheet",type="text/css")
 //- link(href="bower_components/animate/index.css",rel="stylesheet",type="text/css")
+// endbower
+// endbuild
 
 //- assets
+
 link(href="styles/animate.min.css",rel="stylesheet",type="text/css")
+// build:css(.tmp) styles/fabstrap.css
 link(href="styles/fabstrap-en.css",rel="stylesheet",type="text/css")
+// endbuild

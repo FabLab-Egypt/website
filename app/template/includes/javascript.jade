@@ -1,14 +1,20 @@
 //- bower_components
-script(src="bower_components/jquery/dist/jquery.min.js", type="text/javascript")
-script(src="bower_components/jqueryui/jquery-ui.min.js", type="text/javascript")
-script(src="bower_components/jquery.slimscroll/jquery.slimscroll.min.js", type="text/javascript")
-script(src="bower_components/jquery.transit/jquery.transit.js", type="text/javascript")
-script(src="bower_components/fullPage.js/jquery.fullPage.min.js", type="text/javascript")
-script(src="bower_components/matchHeight/jquery.matchHeight-min.js", type="text/javascript")
-script(src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js", type="text/javascript")
-script(src="//maps.googleapis.com/maps/api/js?sensor=false")
+// build:js(.) scripts/components.js
+// bower:js
+script(src='bower_components/jquery/dist/jquery.min.js', type='text/javascript')
+script(src='bower_components/jqueryui/jquery-ui.min.js', type='text/javascript')
+script(src='bower_components/jquery.slimscroll/jquery.slimscroll.min.js', type='text/javascript')
+script(src='bower_components/jquery.transit/jquery.transit.js', type='text/javascript')
+script(src='bower_components/fullPage.js/jquery.fullPage.min.js', type='text/javascript')
+script(src='bower_components/matchHeight/jquery.matchHeight-min.js', type='text/javascript')
+// endbower
+// endbuild
+script(src='//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js', type='text/javascript')
+script(src='//maps.googleapis.com/maps/api/js?sensor=false')
 
 //- assets
-script(src="scripts/reveal-animated.js")
-script(src="scripts/main.js")
-script(src="scripts/fullpage.js")
+// build:js(.tmp) scripts/fabstrap.js
+script(src='scripts/reveal-animated.js')
+script(src='scripts/main.js')
+script(src='scripts/fullpage.js')
+// endbuild
