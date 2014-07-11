@@ -161,16 +161,28 @@ module.exports = function (grunt) {
         jade: {
             dist: {
                 options: {
-                  pretty: true
+                    pretty: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= config.app %>',
+                    dest: '<%= config.dist %>',
+                    src: '*.jade',
+                    ext: '.html'
+                }]
             },
-            files: [{
-              expand: true,
-              cwd: '<%= config.app %>',
-              dest: '.tmp',
-              src: '*.jade',
-              ext: '.html'
-            }]
-          }
+            server: {
+                options: {
+                    pretty: true
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= config.app %>',
+                    dest: '.tmp',
+                    src: '*.jade',
+                    ext: '.html'
+                }]
+            }
         },
 
 
@@ -234,9 +246,9 @@ module.exports = function (grunt) {
                     src: [
                         '<%= config.dist %>/scripts/{,*/}*.js',
                         '<%= config.dist %>/styles/{,*/}*.css',
-                        '<%= config.dist %>/images/{,*/}*.*',
-                        '<%= config.dist %>/styles/fonts/{,*/}*.*',
-                        '<%= config.dist %>/*.{ico,png}'
+                        //'<%= config.dist %>/images/{,*/}*.*',
+                        //'<%= config.dist %>/styles/fonts/{,*/}*.*',
+                        //'<%= config.dist %>/*.{ico,png}'
                     ]
                 }
             }
@@ -249,7 +261,7 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= config.dist %>'
             },
-            html: '<%= config.app %>/index.html'
+            html: '<%= config.dist %>/index.html'
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
