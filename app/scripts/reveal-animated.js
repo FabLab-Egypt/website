@@ -1,62 +1,66 @@
+'use strict';
 
-function reveal_animate(selector, animation, remove_animation_class, addclasses, completionClasses)
+/* exported revealAnimate */
+/* exported revealAnimateChain */
+
+function revealAnimate(selector, animation, removeAnimationClass, addClasses, completionClasses)
 {
-  $(selector)
-    .removeClass('invisible')
-      .addClass(addclasses+' animated '+animation)
-        .one(
-          'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-          function()
-          {
-            if (remove_animation_class){
-              $(this)
-                .removeClass('animated')
-                  .removeClass(animation);
-            }
+    $(selector)
+        .removeClass('invisible')
+            .addClass(addClasses+' animated '+animation)
+                .one(
+                    'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function()
+                    {
+                        if (removeAnimationClass){
+                            $(this)
+                                .removeClass('animated')
+                                    .removeClass(animation);
+                        }
 
-            if(completionClasses){
-              $(this)
-                .addClass(completionClasses)
-            }
-          }
-        );
+                        if(completionClasses){
+                            $(this)
+                                .addClass(completionClasses);
+                        }
+                    }
+                );
 }
 
-function reveal_animate_chain(selector, animation_array, addclasses, remove_addclasses)
+function revealAnimateChain(selector, animationArray, addClasses, removeAddClasses)
 {
+    var thisAddClasses = '';
+    if (!addClasses) { addClasses=''; }
+    else if (addClasses instanceof Array) {
+        thisAddClasses = addClasses[0];
+        addClasses.shift();
+    }
+    else if (addClasses instanceof String) {
+        thisAddClasses = addClasses;
+    }
 
-  if (!addclasses) { addclasses=''; }
-  else if (addclasses instanceof Array) {
-    this_addclasses = addclasses[0];
-    addclasses.shift();
-  }
-  else if (addclasses instanceof String) {
-    this_addclasses = addclasses;
-  }
+    $(selector)
+        .removeClass('invisible')
+            .addClass(thisAddClasses+' animated '+animationArray[0])
+                .one(
+                    'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
+                    function()
+                    {
+                        console.log('::> revealAnimateChain:done');
 
-  $(selector)
-    .removeClass('invisible')
-      .addClass(this_addclasses+' animated '+animation_array[0])
-        .one(
-          'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend',
-          function()
-          {
-            console.log("::> reveal_animate_chain:done");
+                        $(this)
+                            .removeClass('animated')
+                                .removeClass(animationArray[0]);
+                        console.log('::> animation classe removed');
 
-            $(this)
-              .removeClass('animated')
-                .removeClass(animation_array[0]);
-            console.log("::> animation classe removed");
+                        if(removeAddClasses){ $(this).removeClass(removeAddClasses); }
 
-            if(remove_addclasses){ $(this).removeClass(remove_addclasses) }
+                        if (animationArray.length >= 1) {
+                            console.log('::> preparing next chained animation.');
+                            animationArray.shift();
+                            revealAnimateChain(selector, animationArray, addClasses, removeAddClasses);
+                        }
 
-            if (animation_array.length >= 1) {
-              console.log("::> preparing next chained animation.");
-              animation_array.shift();
-              reveal_animate_chain(selector, animation_array, addclasses, remove_addclasses);
-            }
-
-          }
-        );
+                    }
+                );
 
 }
