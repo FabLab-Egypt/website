@@ -49,7 +49,8 @@ module.exports = function (grunt) {
             },
             jade:{
                 files: ['<%= config.app %>/{,*/}*.jade',
-                        '<%= config.app %>/template/{,*/}*.jade'],
+                '<%= config.app %>/template/{,*/}*.jade',
+                '<%= config.app %>/template/{,*/{,*/}}*.jade'],
                 tasks: ['jade'],
                 options: {
                     livereload: true
