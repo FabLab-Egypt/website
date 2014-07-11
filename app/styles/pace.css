@@ -12,9 +12,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  height: 260px;
-  width: 260px;
-  background: url(../images/logoXXL_black_opacity0.2.png);
+  height: 128px;
+  width: 128px;
+  background: url(../images/logo_black_opacity0.1.png);
   /* border: 1px solid #29d; */
 }
 
@@ -37,15 +37,15 @@
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 
-  max-width: 260px;
+  max-width: 128px;
   position: fixed;
   z-index: 2000;
   display: block;
   position: absolute;
   left: 0px;
   top: 0px;
-  height: 260px;
-  background: url(../images/logoXXL.png);
+  height: 128px;
+  background: url(../images/logo.png);
 }
 
 .pace.pace-inactive {
