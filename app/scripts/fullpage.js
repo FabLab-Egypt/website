@@ -24,11 +24,13 @@ $(document).ready(function() {
                     case 'Machines':
                         revealAnimate('#machines-main .machines .machines-title',  'fadeInDown',   false, 'animation-delay-200ms');
                         revealAnimate('#machines-main .machines .machines-info',  'fadeInDown',   false, 'animation-delay-300ms');
-                        revealAnimate('#machines-main .machines .machines-icons .col:nth-child(3)',  'fadeInDown',   false, 'animation-delay-400ms');
-                        revealAnimate('#machines-main .machines .machines-icons .col:nth-child(2)',  'fadeInRight',   false, 'animation-delay-500ms');
-                        revealAnimate('#machines-main .machines .machines-icons .col:nth-child(4)',  'fadeInLeft',   false, 'animation-delay-500ms');
                         revealAnimate('#machines-main .machines .machines-icons .col:nth-child(1)',  'fadeInRight',   false, 'animation-delay-600ms');
-                        revealAnimate('#machines-main .machines .machines-icons .col:nth-child(5)',  'fadeInLeft',   false, 'animation-delay-600ms');
+                        revealAnimate('#machines-main .machines .machines-icons .col:nth-child(2)',  'fadeInRight',   false, 'animation-delay-500ms');
+                        revealAnimate('#machines-main .machines .machines-icons .col:nth-child(3)',  'fadeInRight',   false, 'animation-delay-400ms');
+
+                        revealAnimate('#machines-main .machines .machines-icons .col:nth-child(4)',  'fadeInLeft',   false, 'animation-delay-400ms');
+                        revealAnimate('#machines-main .machines .machines-icons .col:nth-child(5)',  'fadeInLeft',   false, 'animation-delay-500ms');
+                        revealAnimate('#machines-main .machines .machines-icons .col:nth-child(6)',  'fadeInLeft',   false, 'animation-delay-600ms');
                         break;
                     case '3D-Printer':
                         revealAnimate('#machines-makerbot .machine-image',  'fadeInRight',   false, 'animation-delay-100ms');
