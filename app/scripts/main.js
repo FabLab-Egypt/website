@@ -39,6 +39,11 @@ $(function()
         'lazyLoad': 'ondemand',
         'slidesToShow': 5,
         'slidesToScroll': 1,
+        'onBeforeChange': function (index){
+            console.log(':::>slick.onBeforeChange');
+            revealAnimate(index, 'flipOutY',  true);
+
+        }
     });
 
     // Swap Slider Image with the Machines
@@ -105,13 +110,12 @@ $(function() {
     google.maps.event.addDomListener(window, 'load', showGoogleMaps);
 });
 
-// Lightbox: for Slick Slider 
+// Lightbox: for Slick Slider
 $(document).ready(function() {
     var $lightbox = $('#lightbox');
 
-    $('[data-target="#lightbox"]').on('click', function(event) {
-        var $img = $(this).parents(),
-            src = $(this).attr('data-img'),
+    $('[data-target="#lightbox"]').on('click', function() {
+        var src = $(this).attr('data-img'),
             alt = $(this).attr('data-alt'),
             css = {
                 'maxWidth': $(window).width() - 100,
@@ -125,7 +129,7 @@ $(document).ready(function() {
         $lightbox.addClass('invisible');
     });
 
-    $lightbox.on('shown.bs.modal', function (e) {
+    $lightbox.on('shown.bs.modal', function () {
         var $img = $lightbox.find('img');
 
         $lightbox.find('.modal-dialog').css({'width': $img.width()});
@@ -134,7 +138,7 @@ $(document).ready(function() {
         revealAnimate($lightbox, 'bounceInDown',  true);
     });
 
-    $lightbox.on('hidden.bs.modal', function (e) {
+    $lightbox.on('hidden.bs.modal', function () {
         $lightbox.find('img').attr('src', '');
         $lightbox.find('img').attr('alt', '');
         $lightbox.find('img').attr('style','');

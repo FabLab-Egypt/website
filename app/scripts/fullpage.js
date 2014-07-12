@@ -5,11 +5,11 @@
 /*============================================================================*/
 /*     Execute On Documente Ready                                             */
 $(document).ready(function() {
-    var sections_anchors = ['About', 'Services', 'Machines', '3D-Printer', 'Laser-Cutter', 'Vinly-Cutter', 'Milling-Machine', 'Electronics-Workbench', 'Memberships', 'Contacts', ];
+    var sectionsAnchors = ['About', 'Services', 'Machines', '3D-Printer', 'Laser-Cutter', 'Vinly-Cutter', 'Milling-Machine', 'Electronics-Workbench', 'Memberships', 'Contacts', ];
     /*========================================================================*/
     /* fullPage -- Initaliz and Configure                                     */
-        $('#full-page').fullpage({
-            'anchors': sections_anchors,
+    $('#full-page').fullpage({
+            'anchors': sectionsAnchors,
             'animateAnchor': true,
             'autoScrolling': true,
             'easing': 'easeInQuart',
@@ -71,8 +71,8 @@ $(document).ready(function() {
             },
             'onLeave': function(index, newIndex, direction){
                 console.log('>>fullpage.onLeave::index: '+index+'->'+newIndex+'  '+direction);
-                var comingSection  = sections_anchors[newIndex-1];
-                var pastingSection = sections_anchors[index-1];
+                var comingSection  = sectionsAnchors[newIndex-1];
+                var pastingSection = sectionsAnchors[index-1];
                 console.log('>>fullpage.onLeave::index: '+pastingSection+'->'+comingSection+'  '+direction);
 
                 //In
@@ -119,8 +119,8 @@ $(document).ready(function() {
 
     /*========================================================================*/
     /* fullPage-controls -- Styling Classes                                   */
-        $('#full-page .controlArrow.prev').append('<i class="fa fa-chevron-left fa-3x"></i>');
-        $('#full-page .controlArrow.next').append('<i class="fa fa-chevron-right fa-3x"></i>');
+    $('#full-page .controlArrow.prev').append('<i class="fa fa-chevron-left fa-3x"></i>');
+    $('#full-page .controlArrow.next').append('<i class="fa fa-chevron-right fa-3x"></i>');
     /*========================================================================*/
 
     /*========================================================================*/
@@ -131,6 +131,5 @@ $(document).ready(function() {
         // $('.fullPage-slidesNav > ul li:nth-child(1) a').empty().prepend('');
     /*========================================================================*/
 
-    }
-);
+});
 /*============================================= Execute On Documente Ready ===*/
