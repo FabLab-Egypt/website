@@ -21,3 +21,10 @@
         include sections/pricing_table-en
     #contacts.section
         include sections/contact-en
+
+#lightbox.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+    .modal-dialog
+        button.close.hidden(type='button', data-dismiss='modal', aria-hidden='true') &times;
+        .modal-content
+            .modal-body
+                img(src='', alt='')

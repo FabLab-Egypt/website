@@ -67,6 +67,38 @@ $youtube:       #e52d27;
   }
 }
 
+#lightbox {
+
+    padding: 30px 0px;
+
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+
+    /* .modal-dialog{
+        vertical-align:middle;
+        position:fixed;
+    } */
+
+    .modal-content {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .modal-body {
+        padding: 0 !important;
+    }
+
+    .close {
+        color: #fff;
+        opacity: 1;
+        padding: 5px 8px;
+        position: absolute;
+        right: 0px;
+        z-index:1032;
+    }
+}
+
+
 
 
 #full-page {

@@ -17,3 +17,5 @@ mixin slick_slide_image(imgSrc, imgWidth)
 mixin slick_slide_image_asBG(imgSrc, imgWidth)
     div(style="width:#{imgWidth}; height:#{imgWidth};")
         .image.slick-cover(style="background-image: url(#{imgSrc}); width:#{imgWidth}; height:#{imgWidth};")
+            a(data-img="#{imgSrc}", data-toggle="modal", data-target="#lightbox", style="width:#{imgWidth}; height:#{imgWidth};padding:100%;")
+                | &nbsp;
