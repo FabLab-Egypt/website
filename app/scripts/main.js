@@ -20,6 +20,7 @@ $(function()
 
     // PaceJS: As Pace Complete
     Pace.once('done', function(){
+        $('.remove-on-load').remove(); // fix loader images priorty load displacment.
         revealAnimate('.pace.pace-active', 'flipOutX',  false);
     });
 
