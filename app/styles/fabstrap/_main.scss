@@ -35,10 +35,21 @@ $youtube:       #e52d27;
       height: 100%;
       display: table;
 
-      p {
+      .table-cell {
         display: table-cell;
         vertical-align: middle;
         text-align: center;
+
+        .machine-slick-slide {
+            width: 690px !important;
+
+            .slick-prev:before, .slick-next:before {
+                font-family: FontAwesome;
+                color: #000;
+            }
+            .slick-prev:before {content: "";}
+            .slick-next:before {content: "";}
+        }
       }
     }
   }
