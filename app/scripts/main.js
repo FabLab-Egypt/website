@@ -6,6 +6,22 @@
 /* global map: true */
 /* global marker: true */
 
+// PaceJS: As Pace Complete
+Pace.once('done', function(){
+    $('.remove-on-load').remove(); // fix loader images priorty load displacment.
+    revealAnimate('.pace.pace-active', 'flipOutX',  false);
+});
+
+// PaceJS: After Pace Complete
+Pace.on('done', function(){
+    revealAnimate('#header .navbar', 'fadeInDown',  false, 'animation-delay-200ms');
+    revealAnimate('#header .navbar .navbar-brand', 'fadeInDown',  false, 'animation-delay-300ms');
+    revealAnimate('#header .navbar ul.nav', 'fadeInDown',  false, 'animation-delay-300ms');
+    revealAnimate('#about .reveal h2',  'fadeInUp',  false, 'animation-delay-600ms');
+    revealAnimate('#about .reveal p', 'fadeInDown',  false, 'animation-delay-700ms');
+});
+
+
 /******************************************************/
 /** On Document Load                                 **/
 
@@ -18,19 +34,11 @@ $(function()
     $('#services .thumbnail').matchHeight();
     $('.machines .col').matchHeight();
 
-    // PaceJS: As Pace Complete
-    Pace.once('done', function(){
-        $('.remove-on-load').remove(); // fix loader images priorty load displacment.
-        revealAnimate('.pace.pace-active', 'flipOutX',  false);
-    });
-
-    // PaceJS: After Pace Complete
-    Pace.on('done', function(){
-        revealAnimate('#header .navbar', 'fadeInDown',  false, 'animation-delay-200ms');
-        revealAnimate('#header .navbar .navbar-brand', 'fadeInDown',  false, 'animation-delay-300ms');
-        revealAnimate('#header .navbar ul.nav', 'fadeInDown',  false, 'animation-delay-300ms');
-        revealAnimate('#about .reveal h2',  'fadeInUp',  false, 'animation-delay-600ms');
-        revealAnimate('#about .reveal p', 'fadeInDown',  false, 'animation-delay-700ms');
+    // Slick Slide
+    $('.machine-slick-slide').slick({
+        'lazyLoad': 'ondemand',
+        'slidesToShow': 5,
+        'slidesToScroll': 1,
     });
 
     // Socila Links Hover Animation
