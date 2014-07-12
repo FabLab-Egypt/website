@@ -10,7 +10,8 @@
     "matchHeight": "~0.5.2",
     "fullpage.js": "alvarotrigo/fullPage.js#~2.0.7",
     "animate.css": "daneden/animate.css#~3.2.0",
-    "animate": "https://raw.githubusercontent.com/daneden/animate.css/master/animate.css"
+    "animate": "https://raw.githubusercontent.com/daneden/animate.css/master/animate.css",
+    "slick-carousel": "kenwheeler/slick#~1.3.6"
   },
   "devDependencies": {}
 }
