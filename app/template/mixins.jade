@@ -6,3 +6,8 @@ mixin socialLinks(width, offset)
   - var social_links_col_width = width
   - var social_links_col_offset = offset
   include partials/social-links
+
+mixin slick_slide_image(imgSrc, imgWidth)
+    div
+        .image
+            img(src=imgSrc, height=imgWidth)
