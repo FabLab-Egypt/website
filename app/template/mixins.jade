@@ -7,7 +7,13 @@ mixin socialLinks(width, offset)
   - var social_links_col_offset = offset
   include partials/social-links
 
+
 mixin slick_slide_image(imgSrc, imgWidth)
     div
         .image
-            img(src=imgSrc, height=imgWidth)
+            img(src=imgSrc, width=imgWidth)
+
+
+mixin slick_slide_image_asBG(imgSrc, imgWidth)
+    div(style="width:#{imgWidth}; height:#{imgWidth};")
+        .image.slick-cover(style="background-image: url(#{imgSrc}); width:#{imgWidth}; height:#{imgWidth};")
