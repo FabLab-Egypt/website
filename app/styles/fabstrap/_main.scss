@@ -35,14 +35,69 @@ $youtube:       #e52d27;
       height: 100%;
       display: table;
 
-      p {
+      .table-cell {
         display: table-cell;
         vertical-align: middle;
         text-align: center;
+
+        .machine-slick-slide {
+            width: 640px !important;
+            margin-left: 24px !important;
+
+            .slick-cover{
+                background-repeat: no-repeat;
+                background-position: center, center;
+                background-size: cover;
+            }
+
+            .slick-prev:before, .slick-next:before {
+                font-family: FontAwesome;
+                color: #000;
+            }
+
+            .slick-next { right: -20px !important;}
+            .slick-next:before {content: "";}
+
+            /* .slick-prev { left: -20px !important; } */
+            .slick-prev:before {content: "";}
+
+        }
       }
     }
   }
 }
+
+#lightbox {
+
+    padding: 30px 0px;
+
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+
+    /* .modal-dialog{
+        vertical-align:middle;
+        position:fixed;
+    } */
+
+    .modal-content {
+        display: inline-block;
+        text-align: center;
+    }
+
+    .modal-body {
+        padding: 0 !important;
+    }
+
+    .close {
+        color: #fff;
+        opacity: 1;
+        padding: 5px 8px;
+        position: absolute;
+        right: 0px;
+        z-index:1032;
+    }
+}
+
 
 
 

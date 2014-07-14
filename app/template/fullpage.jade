@@ -13,9 +13,18 @@
         include sections/machines/roland-en
     #machines-modela.section.machines
         include sections/machines/modela-en
+    #electronics-workbench.section.machines
+        include sections/machines/electronics_workbench
     //- //- #machines-tools.section.machines
     //- //-     include sections/machines/machine-en
     #memberships.section
         include sections/pricing_table-en
     #contacts.section
         include sections/contact-en
+
+#lightbox.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myLargeModalLabel', aria-hidden='true')
+    .modal-dialog
+        button.close.hidden(type='button', data-dismiss='modal', aria-hidden='true') &times;
+        .modal-content
+            .modal-body
+                img(src='', alt='')
