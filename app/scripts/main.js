@@ -45,6 +45,8 @@ $(function()
 
         }
     });
+    $('.slick-slider .slick-prev').addClass('fa fa-caret-square-o-left');
+    $('.slick-slider .slick-next').addClass('fa fa-caret-square-o-right');
 
     // Swap Slider Image with the Machines
     // $('.machine-slick-slide .slick-cover').click(function(){
