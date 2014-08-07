@@ -48,6 +48,26 @@ $(function()
     $('.slick-slider .slick-prev').addClass('fa fa-caret-square-o-left');
     $('.slick-slider .slick-next').addClass('fa fa-caret-square-o-right');
 
+
+    //popover-labsessions
+    $('.popover-labsessions').popover({
+        'trigger': 'hover',
+        'content': ' try',
+        // 'content': '<ul><li>Traning On Operation The machines<ul><li> Laser Cutter </li>'+
+        // '<li> 3D Printer </li><li> Vinly Cutter </li><li> Milling Machine </li></ul></li>'+
+        // '<li> Electronic Basics Course </li><li> Software Traning<ul>'+
+        // '<li> Vector Design Using Inkescape </li><li> 2D CAD Design </li>'+
+        // '<li> 3D Design / 3D CAD Design </li><li> Circut Desing </li></ul></li></ul>'
+        // 'template': '<div class="popover" role="tooltip"><div class="arrow"></div>'+
+        // '<h3 class="popover-title">Free Lab Sessions</h3><div class="popover-content">'+
+        // '<ul><li>Traning On Operation The machines<ul><li> Laser Cutter </li><li> 3D Printer </li>'+
+        // '<li> Vinly Cutter </li><li> Milling Machine </li></ul></li><li> Electronic Basics Course </li>'+
+        // '<li> Software Traning<ul><li> Vector Design Using Inkescape </li><li> 2D CAD Design </li>'+
+        // '<li> 3D Design / 3D CAD Design </li><li> Circut Desing </li></ul></li></ul></div></div>',
+
+    });
+
+
     // Swap Slider Image with the Machines
     // $('.machine-slick-slide .slick-cover').click(function(){
     //     console.log(":::> machine-slick-slide:: ");
