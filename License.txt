@@ -2,16 +2,20 @@
 Fab Lab Egypt Website
 =====================
 
-Fab Lab Egypt New Upcoming website.
+Fab Lab Egypt New website.
 
 Copyright 2014 Fab Lab EGYPT.
 
-##### Credits
+- - -
+
+Credits
 
 - Assets:
-    - [fullPage.js][fp] by Alvarotrigo.
-    - [Animate.css][anim] by Daniel Eden.
-    - Images And Icons from [The Noun Project][tnp].
+    - fullPage.js [1] by Alvarotrigo.
+    - Animate.css [2] by Daniel Eden.
+    - Bootstrap [3] by Twitter
+    - Bootswatch [4]
+    - Images And Icons from The Noun Project [5].
         - Drill by Nick Green.
         - CNC Router by Nick Green.
         - Laser Cutter by Nick Green.
@@ -23,24 +27,27 @@ Copyright 2014 Fab Lab EGYPT.
         - Easel by Monika Ciapala.
         - Teacher by Musavvir Ahmed.
 - Development Tools:
-    - [Yeoman][yo] The web's scaffolding tool for modern webapps.
-    - [Grunt][gr] The JavaScript Task Runner.
-    - [Bower][bo] A package manager for the web.
-    - [pngquant][pngquant] lossy compression of PNG images.
-    - [Atom](https://atom.io/) A hackable text editor...
+    - Yeoman [6] The web's scaffolding tool for modern webapps.
+    - Grunt [7] The JavaScript Task Runner.
+    - Bower [8] A package manager for the web.
+    - pngquant [9] lossy compression of PNG images.
+    - Atom [10] A hackable text editor...
 
 
 This just the tip of the ice burg, so thanks to all the open source community.
 
-[yo]: http://yeoman.io
-[gr]: http://gruntjs.com
-[bo]: http://bower.io
-[pngquant]: http://pngquant.org/
-[bs]: http://getbootstrap.com/
-[bw]: http://bootswatch.com/
-[fp]: https://github.com/alvarotrigo/fullPage.js
-[anim]: https://github.com/daneden/animate.css
-[tnp]: https://thenounproject.com
+[1]: https://github.com/alvarotrigo/fullPage.js
+[2]: https://github.com/daneden/animate.css
+[3]: http://getbootstrap.com
+[4]: http://bootswatch.com
+[5]: https://thenounproject.com
+[6]: http://yeoman.io
+[7]: http://gruntjs.com
+[8]: http://bower.io
+[9]: http://pngquant.org
+[10]: https://atom.io
+
+
 - - -
 
-_(c) Fab Lab EGYPT - 2014_
+(c) Fab Lab EGYPT - 2014
