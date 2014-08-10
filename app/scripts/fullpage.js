@@ -82,6 +82,12 @@ $(document).ready(function() {
                         else if(direction==='up'){ console.log('services-up'); revealAnimate('#services .col',  'fadeInDownBig',   true, 'animation-delay-300ms'); }
                         else {console.log('>>fullpage.onLeave.services-else :: "'+direction+'"');}
                         break;
+                    case '3D-Printer':
+                        $('.3dprinter-slick .hidden').removeClass('hidden');
+                        break;
+                    case 'Laser-Cutter':
+                        $('.lasercutter-slick .hidden').removeClass('hidden');
+                        break;
                     case 'Memberships':
                         if(direction==='down'){ revealAnimate('#memberships .pricing-table .panel',  'fadeInUpBig',   true, 'animation-delay-300ms'); }
                         else if(direction==='up'){ console.log('>>fullpage.onLeave.services-up'); revealAnimate('#memberships .pricing-table .panel',  'fadeInDownBig',   true, 'animation-delay-300ms'); }
