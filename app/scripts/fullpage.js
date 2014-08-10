@@ -3,6 +3,15 @@
 /* global revealAnimate: true */
 
 /*============================================================================*/
+/*     functions                                                              */
+
+function imgLazyLoad(target){
+    var imgsrc = $( target ).attr('data-src');
+    $(target).attr('src', imgsrc);
+    $(target).removeClass('img-lazy-loading');
+}
+
+/*============================================================================*/
 /*     Execute On Documente Ready                                             */
 $(document).ready(function() {
     var sectionsAnchors = ['About', 'Services', 'Machines', '3D-Printer', 'Laser-Cutter', 'Vinly-Cutter', 'Milling-Machine', 'Electronics-Workbench', 'Memberships', 'Contacts', ];
@@ -83,10 +92,21 @@ $(document).ready(function() {
                         else {console.log('>>fullpage.onLeave.services-else :: "'+direction+'"');}
                         break;
                     case '3D-Printer':
+                        imgLazyLoad('.3d-printer img');
                         $('.3dprinter-slick .hidden').removeClass('hidden');
                         break;
                     case 'Laser-Cutter':
+                        imgLazyLoad('.laser-cutter img');
                         $('.lasercutter-slick .hidden').removeClass('hidden');
+                        break;
+                    case 'Vinly-Cutter':
+                        imgLazyLoad('.vinly-cutter img');
+                        break;
+                    case 'Milling-Machine':
+                        imgLazyLoad('.milling-machine img');
+                        break;
+                    case 'Electronics-Workbench':
+                        imgLazyLoad('.electronics-workbench img');
                         break;
                     case 'Memberships':
                         if(direction==='down'){ revealAnimate('#memberships .pricing-table .panel',  'fadeInUpBig',   true, 'animation-delay-300ms'); }
