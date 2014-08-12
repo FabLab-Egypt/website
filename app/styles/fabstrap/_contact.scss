@@ -16,3 +16,12 @@
     z-index: 3; /* The z-index should be higher than Google Maps */
   }
 }
+
+.googlemap-frame{
+    height: 100%;
+    width: 100%;
+    position:absolute;
+    top: 70px;
+    left: 0;
+
+}
