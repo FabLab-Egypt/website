@@ -3,10 +3,14 @@
     height: 100%;
     width: 100%;
     position:absolute;
-    top: 0;
+    top: 70px;
     left: 0;
     /* z-index: 2; */ /* Set z-index to 0 as it will be on a layer below the contact form */
-  }
+
+    .overlay{ display:block; text-align:center;}
+    .tooltip{ opacity: 1 !important;}
+}
+
 
   #map-overlay {
     z-index: 3; /* The z-index should be higher than Google Maps */
