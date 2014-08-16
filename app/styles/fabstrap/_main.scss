@@ -109,23 +109,31 @@ $youtube:       #e52d27;
 
 
 #full-page {
+
+    $section_smoke: whitesmoke;
+    $service_golden: #fdd55e;
+    $section_gray: #ecf0f1;
+    $section_cyan: #43f0f6;
+    $section_oil: #89C4F4;
+    $section_blue: #2163ff;
+     
   /*==========  About  ==========*/
-    #about.section { background: whitesmoke; }
+    #about.section { background: $section_smoke; }
 
   /*==========  Services  ==========*/
-    #services.section { background: #fdd55e; }
+    #services.section { background: $section_gray; }
 
   /*==========  Machines  ==========*/
-    .machines.section { background: #ecf0f1; }
+    .machines.section { background: $section_gray; }
 
   /*==========  Projects ==========*/
-    #projects.section { background: #43f0f6; }
+    #projects.section { background: $section_cyan; }
 
   /*==========  Membership ==========*/
-    #memberships.section { background: #89C4F4; }
+    #memberships.section { background: $section_oil; }
 
   /*==========  contacts ==========*/
-    #contacts.section { background: #89C4F4; }
+    #contacts.section { background: $section_oil; }
 
   /*=========================================*/
 
